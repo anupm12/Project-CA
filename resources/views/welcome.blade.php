@@ -82,6 +82,7 @@
                 </use>
             </svg>
         </div>
+
         <div class="col-md-7 pl-0 py-4 no-col">
             <p class="mt-4 services__text">
                 The ability to create success is the product of a unique combination of skills, mindset and abilities
@@ -89,6 +90,7 @@
             </p>
         </div>
     </div>
+
     <div class="row no-row px-5 services__card">
         <div class="col-md-3 no-col pl-0">
             <div class="card" style="width: 18rem;">
@@ -100,6 +102,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-md-3 no-col pl-0">
             <div class="card" style="width: 18rem;">
                 <div class="py-3">
@@ -132,16 +135,15 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
+
     <div class="row no-row">
         <div class="col-md-6 no-col text-center py-5">
-            <b class="services__more">
-                MORE
-            </b>
-            <a href="#">
+            <a href="#" class="services__link">
+                <b class="services__more">
+                    M<b class="services__more-1">OR</b>E
+                </b>
+
                 <svg class="services__icons mr-2 mt-2">
                     <use xlink:href="Images/sprite.svg#icon-right-arrow">
                     </use>
@@ -151,7 +153,50 @@
         <div class="col-md-6 no-col">
 
         </div>
+    </div>
+</div>
 
+
+<div class="services py-2">
+    <div class="row no-row px-5">
+        <div class="col-md-5 pr-0 no-col">
+            <p class="services__heading d-inline align-top">ABOUT</p>
+            <svg class="services__icon mt-4">
+                <use xlink:href="Images/sprite.svg#icon-about-us">
+                </use>
+            </svg>
+        </div>
+
+        <div class="col-md-7 pl-0 py-4 no-col">
+            <p class="mt-4 services__text">
+                Call it synchronicity, kismet, or just being in the right place at the right time. Successful
+                entrepreneurs understand this paradigm shift and are doing everything to make the most of it.
+            </p>
+        </div>
+    </div>
+
+    <div class="row no-row px-5 about__card-1">
+        <div class="col-md-6 no-col pl-0 d-flex justify-content-end">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gaurav Mishra</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 no-col pl-0">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Jay Rauniyar</h5>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

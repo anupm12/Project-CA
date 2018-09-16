@@ -10578,12 +10578,21 @@ body {
 
 .services__more {
   color: #53C7F0;
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.services__more-1 {
+  color: #000;
+  font-size: 23px;
 }
 
 .services__icons {
-  height: 20px;
-  width: 20px;
+  height: 35px;
+  width: 35px;
+}
+
+.services__link:hover {
+  text-decoration: none;
 }
 
 .card {
