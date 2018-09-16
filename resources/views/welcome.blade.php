@@ -47,12 +47,112 @@
     <div class="col-md-4 order-md-1 hero-section__text mx-auto">
         <div>
             <h2>Experts here</h2>
-            <h3>Experience, <b class="highlight-text" >Knowledge, </b> Dedication is what we emphasize on.</h3>
-            <small>Know us better</small>
+            <h3>Experience, <b class="highlight-text">Knowledge, </b> Dedication is what we emphasize on.</h3>
+            <p class="hero-section__social-text">Know us better</h5><br>
+                <a href="#">
+                    <svg class="hero-section__icon mr-2 mt-2">
+                        <use xlink:href="Images/sprite.svg#icon-facebook">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="hero-section__icon mr-2 mt-2">
+                        <use xlink:href="Images/sprite.svg#icon-instagram">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="hero-section__icon mr-2 mt-2">
+                        <use xlink:href="Images/sprite.svg#icon-twitter">
+                        </use>
+                    </svg>
+                </a>
         </div>
-    </div>
     </div>
 </div>
 
+
+
+<div class="services py-5">
+    <div class="row no-row px-5">
+        <div class="col-md-5 pr-0 no-col">
+            <p class="services__heading d-inline align-top">SERVICES</p>
+            <svg class="services__icon mt-4">
+                <use xlink:href="Images/sprite.svg#icon-services">
+                </use>
+            </svg>
+        </div>
+        <div class="col-md-7 pl-0 py-4 no-col">
+            <p class="mt-4 services__text">
+                The ability to create success is the product of a unique combination of skills, mindset and abilities
+                that you can tap into again and again to achieve your biggest dreams.
+            </p>
+        </div>
+    </div>
+    <div class="row no-row px-5 services__card">
+        <div class="col-md-3 no-col pl-0">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Accounting and Advisory Services</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 no-col pl-0">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Legal Compliances</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 no-col pl-0">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">payroll</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 no-col pl-0">
+            <div class="card" style="width: 18rem;">
+                <div class="py-3">
+                    <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Governance and Risk Assurance</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="row no-row">
+        <div class="col-md-6 no-col text-center py-5">
+            <b class="services__more">
+                MORE
+            </b>
+            <a href="#">
+                <svg class="services__icons mr-2 mt-2">
+                    <use xlink:href="Images/sprite.svg#icon-right-arrow">
+                    </use>
+                </svg>
+            </a>
+        </div>
+        <div class="col-md-6 no-col">
+
+        </div>
+
+    </div>
+</div>
 
 @endsection

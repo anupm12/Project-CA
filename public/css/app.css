@@ -10488,6 +10488,7 @@ a.text-dark:focus {
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  background-color: #fff;
 }
 
 .my-nav {
@@ -10541,8 +10542,89 @@ body {
           align-items: center !important;
 }
 
+.hero-section__icon {
+  height: 30px;
+  width: 30px;
+}
+
+.hero-section__social-text {
+  font-size: 15px;
+}
+
 .highlight-text {
   color: #53C7F0;
   font-family: 'Montserrat';
+}
+
+.services {
+  color: #233142;
+  background-color: #F8F8F8;
+}
+
+.services__heading {
+  font-family: 'Montserrat';
+  font-size: 30px;
+}
+
+.services__text {
+  font-size: 20px;
+  color: #233142;
+}
+
+.services__card {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.services__more {
+  color: #53C7F0;
+  font-size: 20px;
+}
+
+.services__icons {
+  height: 20px;
+  width: 20px;
+}
+
+.card {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px !important;
+}
+
+.card-body h5 {
+  font-size: 15px;
+}
+
+.card-img-top {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  width: 100px;
+  -webkit-box-shadow: 0px 0px 50px -19px #42474a;
+  box-shadow: 0px 0px 50px -19px #42474a;
 }
 
