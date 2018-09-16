@@ -10524,3 +10524,25 @@ body {
   max-height: 500px !important;
 }
 
+.hero-section h2 {
+  font-family: 'Montserrat';
+  color: #474747;
+}
+
+.hero-section__text {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.highlight-text {
+  color: #53C7F0;
+  font-family: 'Montserrat';
+}
+
