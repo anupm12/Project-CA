@@ -22,8 +22,8 @@
 </head>
 
 <body>
-    <div id="app" class="my-nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
             <a class="navbar-brand" href="#">Brand</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,10 +55,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+
+        <main>
             @yield('content')
         </main>
     </div>
+
 </body>
 
 </html>
