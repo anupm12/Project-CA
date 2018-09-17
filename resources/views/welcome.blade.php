@@ -178,7 +178,7 @@
     <div class="row no-row px-5 about__card-1">
         <div class="col-md-6 no-col pl-0 d-flex justify-content-end">
             <div class="card" style="width: 18rem;">
-                <div class="py-3">
+                <div class="p-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
                 <div class="card-body">
@@ -187,7 +187,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 no-col pl-0">
+        <div class="col-md-6 no-col pl-0 px-5">
             <div class="card" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
