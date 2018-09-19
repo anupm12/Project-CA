@@ -15,7 +15,7 @@
     @endif -->
 
 
-<div class="row no-row hero-section">
+<div class="row no-row hero-section" id="home-section" >
     <div class="col-xs-12 col-md-8 order-md-12 no-col">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -73,7 +73,7 @@
 
 
 
-<div class="services py-5">
+<div class="services py-5" id="services-section" >
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline align-top">SERVICES</p>
@@ -93,7 +93,7 @@
 
     <div class="row no-row px-5 services__card">
         <div class="col-md-3 no-col pl-0">
-            <div class="card" style="width: 18rem;">
+            <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
@@ -104,7 +104,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0">
-            <div class="card" style="width: 18rem;">
+            <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
                 </div>
@@ -115,7 +115,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0">
-            <div class="card" style="width: 18rem;">
+            <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
                 </div>
@@ -126,7 +126,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0">
-            <div class="card" style="width: 18rem;">
+            <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
                 </div>
@@ -157,7 +157,7 @@
 </div>
 
 
-<div class="services py-2">
+<div class="services py-2" id="about-section" >
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline align-top">ABOUT</p>
@@ -175,29 +175,7 @@
         </div>
     </div>
 
-    <div class="row no-row px-5 about__card-1">
-        <div class="col-md-6 no-col pl-0 d-flex justify-content-end">
-            <div class="card" style="width: 18rem;">
-                <div class="p-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Gaurav Mishra</h5>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-6 no-col pl-0 px-5">
-            <div class="card" style="width: 18rem;">
-                <div class="py-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Jay Rauniyar</h5>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 @endsection

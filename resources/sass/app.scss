@@ -7,6 +7,10 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+.custom-cursor {
+    cursor: pointer !important;
+}
+
 .no-row {
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -108,7 +112,7 @@ body {
         color: #233142;
     }
 
-    &__card {
+    &__card-c {
         padding-left: 15px;
         padding-right: 15px;
     }
