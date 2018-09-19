@@ -77,5 +77,6 @@
     </div>
 
 </body>
+<script src="{{ asset('js/jquery.newsTicker.min.js') }}"></script>
 
 </html>

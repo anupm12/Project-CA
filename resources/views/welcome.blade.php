@@ -15,7 +15,7 @@
     @endif -->
 
 
-<div class="row no-row hero-section" id="home-section" >
+<div class="row no-row hero-section" id="home-section">
     <div class="col-xs-12 col-md-8 order-md-12 no-col">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -73,7 +73,7 @@
 
 
 
-<div class="services py-5" id="services-section" >
+<div class="services pt-5" id="services-section">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline align-top">SERVICES</p>
@@ -95,9 +95,9 @@
         <div class="col-md-3 no-col pl-0">
             <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
+                    <img class="card-img-top card-img-top-c mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
-                <div class="card-body">
+                <div class="card-body card-body-c">
                     <h5 class="card-title">Accounting and Advisory Services</h5>
                 </div>
             </div>
@@ -106,9 +106,9 @@
         <div class="col-md-3 no-col pl-0">
             <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
+                    <img class="card-img-top card-img-top-c mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
                 </div>
-                <div class="card-body">
+                <div class="card-body  card-body-c">
                     <h5 class="card-title">Legal Compliances</h5>
                 </div>
             </div>
@@ -117,9 +117,9 @@
         <div class="col-md-3 no-col pl-0">
             <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
+                    <img class="card-img-top card-img-top-c mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
                 </div>
-                <div class="card-body">
+                <div class="card-body  card-body-c">
                     <h5 class="card-title">payroll</h5>
                 </div>
             </div>
@@ -128,9 +128,10 @@
         <div class="col-md-3 no-col pl-0">
             <div class="card card-c" style="width: 18rem;">
                 <div class="py-3">
-                    <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
+                    <img class="card-img-top card-img-top-c mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png"
+                        alt="Card image cap">
                 </div>
-                <div class="card-body">
+                <div class="card-body  card-body-c">
                     <h5 class="card-title">Governance and Risk Assurance</h5>
                 </div>
             </div>
@@ -157,7 +158,8 @@
 </div>
 
 
-<div class="services py-2" id="about-section" >
+
+<div class="services pt-5" id="about-section" style=" background-color:#fff; ">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline align-top">ABOUT</p>
@@ -174,8 +176,32 @@
             </p>
         </div>
     </div>
+    <div class="row no-row about">
+        <div class="col-md-4 no-col">
+            <img src="Images/Carousel/img1.png" alt="" class="about__img">
+        </div>
+        <div class="col-md-8">
+            <div class="">
+               
+                <div class="card" style="width: auto ;">
+                <!-- <div class="py-3">
+                    <img class="card-img-top card-img-top-c mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
+                </div> -->
+                <div class="card-body">
+                    <h2 class="card-title">CA Gaurav Mishra - Founder – The Man behind XYZ.Com</h2>
+                    <p class="card-text"> Gaurav qualified the CA Exams from the Institute of Chartered Accountants of India in 2016.
+                    He worked with Big 4 in Risk Advisory Department. He has experience in Risk Based Internal
+                    Audit of Manufacturing, Metal and Mining Sector. He has good experience in field of Project</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
+
+
+
 
 @endsection
