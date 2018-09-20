@@ -1,0 +1,29 @@
+.single-list {
+    &__h1-text {
+        letter-spacing: 0.15rem;
+        color: #707070;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    &__left-list {
+        padding: 0rem 3rem 0rem 3rem !important;
+        width: auto;
+    }
+
+    &__description {
+        padding-top: 10rem;
+    }
+}
+
+.service-card {
+    &__image {
+        // z-index: -1;
+    }
+
+    &__title {
+        color:#fff;
+        background-color:#233142;
+        // opacity: 0.7;
+        // z-index: 1;
+    }
+}

@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/services/single', [ 
+    'uses' => 'DisplayController@single',
+    'as' => 'services.single'
+]);
+
+Route::get('/services', [ 
+    'uses' => 'DisplayController@services',
+    'as' => 'services'
+]);
