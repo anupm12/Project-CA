@@ -140,7 +140,7 @@
 
     <div class="row no-row">
         <div class="col-md-6 no-col text-center py-5">
-            <a href="#" class="services__link">
+            <a href=" {{ route('services') }} " class="services__link">
                 <b class="services__more">
                     M<b class="services__more-1">OR</b>E
                 </b>

@@ -15,15 +15,22 @@
     }
 }
 
+// .service-heading {
+//     background-color: #f8f8f8;
+// }
+
 .service-card {
-    &__image {
-        // z-index: -1;
-    }
+    position: relative;
 
     &__title {
         color:#fff;
-        background-color:#233142;
-        // opacity: 0.7;
-        // z-index: 1;
+        background-color:#233142 !important;
+        position: absolute;
+        bottom: 28px;
+        font-family: Ubuntu;
+        font-weight: 700;
+        font-size: 1rem;
+        width: 100%;
+        opacity: 0.8;
     }
 }

@@ -1,0 +1,29 @@
+.about-page {
+    position: relative;
+    &__profile-image-1 {
+        position: absolute;
+        left: 4.5rem;
+        top: 3rem;
+        width: 200px;
+        height: 200px;
+        padding: 25px 35px 25px 35px;
+        border: 1px solid #707070;
+        border-radius: 50%;
+        overflow: hidden;
+        background-size: cover;
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    &__profile-text-1 {
+        border: 1px solid #707070;
+        width: 50rem;
+        // height: 50rem;
+        position: absolute;
+        left: 13rem;
+        top: 7rem;
+        // z-index: -1;
+    }
+
+}
+

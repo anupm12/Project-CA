@@ -3,13 +3,7 @@
 @section('content')
 
 
-<!-- <div class="row no-row service-heading">
-    <div class="col-md-12 no-col">
-        <h1 class="header__h1-text">SERVICES</h1>
-    </div>
-</div> -->
-
-@include('layouts/header')
+@include('layouts.header')
 
 <div class="row no-row p-5 service-card">
     <div class="col-md-12 no-col">

@@ -13,4 +13,12 @@ class DisplayController extends Controller
     public function services(){
         return view('services');
     }
+
+    public function about(){
+        return view('about');
+    }
+
+    public function download(){
+        return view('download');
+    }
 }

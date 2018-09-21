@@ -28,3 +28,13 @@ Route::get('/services', [
     'uses' => 'DisplayController@services',
     'as' => 'services'
 ]);
+
+Route::get('/about-us' ,[
+    'uses' => 'DisplayController@about' ,
+    'as' => 'about'
+]);
+
+Route::get('/whats-new' ,[
+    'uses' => 'DisplayController@download' ,
+    'as' => 'download'
+]);
