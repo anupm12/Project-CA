@@ -1,5 +1,5 @@
 <div class="row no-row footer-1">
-    <div class="col-md-3 no-col">
+    <div class="col-md-3 no-col pl-0">
         <div class="card footer-1__footer-card">
             <div class="card-body footer-1__footer-card-body px-5">
                 <h5 class="card-title footer-1__footer-card-heading cool-link">Civestt</h5>
@@ -8,17 +8,27 @@
                     card's content.</p>
             </div>
         </div>
+        <img src="Images/Logo/logo2-C.png" alt="" style="width:20rem;" class="pl-3"  >
     </div>
     <div class="col-md-3 no-col">
         <div class="card footer-1__footer-card">
             <div class="card-body footer-1__footer-card-body px-5">
                 <h5 class="card-title footer-1__footer-card-heading cool-link">Contact</h5>
                 <p class="card-text footer-1__footer-card-text">
-                    <small>Office 305
-                        Street 15, Manhattan, New York</small>
-                    <small>+48 122 33 44 555</small>
-                    <small>+12 555 44 33 123</small>
-                    <small>support@gmail.com</small>
+                    <img src="Images/Footer/location.png" alt="" class="px-2" >
+                    Office 305<br>Street 15, Manhattan,<br>New York
+                </p>
+                <p class="card-text footer-1__footer-card-text">
+                    <img src="Images/Footer/mobile.png" alt="" class="px-2" >
+                    +48 122 33 44 555
+                </p>
+                <p class="card-text footer-1__footer-card-text">
+                    <img src="Images/Footer/phone.png" alt="" class="px-2" >
+                    +12 555 44 33 123
+                </p>
+                <p class="card-text footer-1__footer-card-text">
+                    <img src="Images/Footer/send.png" alt="" class="px-2" >
+                    support@gmail.com
                 </p>
             </div>
         </div>

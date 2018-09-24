@@ -29,7 +29,9 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
-            <a class="navbar-brand" href=".">Brand</a>
+            <a class="navbar-brand pt-0 pb-0 mr-0 ml-0" href=".">
+            <img src="Images/Logo/logo3-C.png" alt="" style="width:15rem; height:3rem ;">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
