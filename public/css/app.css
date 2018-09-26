@@ -10647,7 +10647,7 @@ a.text-dark:focus {
 
 .no-col {
   padding-right: 0px !important;
-  padding-left: opx !important;
+  padding-left: 0px !important;
 }
 
 .container {
