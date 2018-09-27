@@ -57,4 +57,21 @@ class DisplayController extends Controller
     public function newsAdd(){
         return view('admin.news.add');
     }
+
+    public function single(){
+        return view('single');
+    }
+
+    public function services(){
+        return view('services');
+    }
+
+    public function about(){
+        return view('about');
+    }
+
+    public function download(){
+        return view('download');
+    }
+
 }
