@@ -1,0 +1,65 @@
+.header {
+    background: $color-3;
+
+    h2 {
+        color: #fff;
+    }
+
+    .fas {
+        margin-right: 20px;
+    }
+}
+
+.admin-nav {
+    min-height: 2.0625rem !important;
+    background: $color-2 !important;
+    margin-bottom: 0;
+    border-radius: 0;
+
+    a {
+        color: #fff !important;
+    }
+
+    &>li>.navbar-brand {
+        padding-top: 0.375rem !important;
+        padding-bottom: 0 !important;
+        height: 2.0625rem !important;
+    }
+}
+
+.list-group-custom {
+    li {
+        background: $color-3 !important;
+    }
+
+    .active {
+        background: $color-1 !important;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none !important;
+
+        .fas {
+            margin-right: 0.25rem;
+        }
+    }
+
+}
+
+.list-group-item-collaspse {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+    i {
+        color: #fff;
+    }
+
+    a {
+        margin-left: 1.4375rem;
+        color: #fff;
+    }
+
+}

@@ -47,9 +47,13 @@
     </div>
     <div class="col-md-4 order-md-1 hero-section__text mx-auto">
         <div>
-            <h2>Experts here</h2>
-            <h3 id="typewriter"></h3>
-            <span id="typed"></span>
+                <h2>Experts here</h2>
+                <div id="typed-strings">
+                        <h3>Experience, <b class="highlight-text">Knowledge, </b> Dedication is what we emphasize on.</h3>
+                    </div>
+                    <h3 class="typing" id="typed"></h3>
+
+
              <p class="hero-section__social-text">Know us better</h5><br>
                 <a href="#">
                     <svg class="hero-section__icon mr-2 mt-2">
@@ -94,8 +98,8 @@
     </div>
 
     <div class="row no-row px-5 services__card">
-        <div class="col-md-3 no-col pl-0 wow bounceInUp data-wow-iteration">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-3 no-col pl-0 wow bounceInUp ">
+            <div class="card card1" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
@@ -106,7 +110,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0 wow  bounceIn">
-            <div class="card" style="width: 18rem;">
+            <div class="card card1" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
                 </div>
@@ -116,8 +120,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 no-col pl-0 wow">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-3 no-col pl-0 wow bounceInDown">
+            <div class="card card1" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
                 </div>
@@ -127,8 +131,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 no-col pl-0 wow">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-3 no-col pl-0 wow bounceIn">
+            <div class="card card1" style="width: 18rem;">
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
                 </div>
@@ -162,7 +166,7 @@
 <section class="about py-2">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline align-top">ABOUT</p>
+            <p class="services__heading d-inline align-top cool-link-main">ABOUT</p>
             <svg class="services__icon mt-4">
                 <use xlink:href="Images/sprite.svg#icon-about-us">
                 </use>
@@ -263,7 +267,7 @@
 <section class="news py-2">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline align-top">News</p>
+            <p class="services__heading d-inline cool-link-main align-top">News</p>
             <svg class="services__icon mt-4">
                 <use xlink:href="Images/sprite.svg#icon-newspaper">
                 </use>
@@ -281,7 +285,7 @@
     <div class="container px-5">
     <div class="row no-row ">
         <div class="col-md-6  align-self-end no-col pl-0 d-flex">
-                <h4 class="news__sub-heading ">News</h4>
+                <div class="news__sub-heading wow bounceInLeft"><h4>News</h4></div>
                 <ul class="list-group players mt-5">
                     <li class="list-group-item news_new"><a href="">
                         <span class="news__new__item">New</span>
@@ -294,15 +298,15 @@
                 </ul>
 
         </div>
-        <div class="col-md-6">
-            <div class="news__sub-heading1"><h4 class="float-right">News Letter</h4></div>
+        {{-- <div class="col-md-6">
+            <div class="news__sub-heading1 wow bounceInRight"><h4 class="float-right">News Letter</h4></div>
             <form action="form-inline">
             <div class="form-group" >
                 <input type="email" name="email" class="form-control news__form-control" placeholder="Your Email">
             </div>
-            <button type="submit" class="btn btn-custom btn-primary mb-2">Confirm identity</button>
+            <button type="submit" class="btn btn-custom btn-primary mb-2">Subscribe</button>
             </form>
-        </div>
+        </div> --}}
     </section>
 
     </div>
@@ -348,6 +352,7 @@
             </div>
 
             <div class="col-md-8 pl-0 py-4 no-col">
+                <h3>Leave a Query!</h3>
                 <form action="" class="contact__form">
                     <div class="input-group contact__form__input-group">
                         <input class="form-control contact__form__input-group__form-control " type="text" name="name" placeholder="Your Name" />
@@ -375,13 +380,6 @@
     @endsection
 
 @section('page-script')
-<script type="text/javascript" src="{{URL::asset('js/jquery-3.2.1.min.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/jquery.newsTicker.min.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/typed.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/wow.min.js') }}"></script>
-<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
-<script type="text/javascript" src="{{URL::asset('js/main.js')}}"></script>
-
-
-
+{{-- <script type="text/javascript" src="{{URL::asset('js/typed.js')}}"></script> --}}
 @stop

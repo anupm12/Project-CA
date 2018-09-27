@@ -12,7 +12,7 @@
 
     <!-- Scripts -->
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
 
 
     <!-- Fonts -->
@@ -67,11 +67,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
 
         </main>
     </div>
+    <script src="{{ asset('js/app.js') }}" ></script>
     @yield('page-script')
 </body>
 </html>
