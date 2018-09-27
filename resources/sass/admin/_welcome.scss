@@ -1,0 +1,335 @@
+.no-row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+}
+
+.no-col {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.container {
+    padding: 0px !important;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.my-nav {
+    -webkit-box-shadow: 0px 5px 26px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 5px 26px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 5px 26px 0px rgba(0, 0, 0, 0.29);
+
+    a {
+        margin: 0;
+    }
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color-1;
+    transition: width .3s;
+    cursor: pointer;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+.cool-link-main {
+    cursor: pointer;
+}
+
+.cool-link-main::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color-1;
+    transition: width .3s;
+
+}
+
+.cool-link-main:hover::after {
+    width: 40%;
+}
+
+
+
+.carousel .carousel-item {
+    height: 500px !important;
+    // width: 1000px !important;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 500px !important;
+    // max-width: 1000px !important;
+}
+
+.hero-section {
+    h2 {
+        font-family: 'Montserrat';
+        color: #474747;
+    }
+
+    &__text {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    &__icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    &__social-text {
+        font-size: 15px;
+    }
+
+}
+
+.highlight-text {
+    color: $color-1;
+    font-family: 'Montserrat';
+}
+
+
+.services {
+    color: #233142;
+    background-color: #F8F8F8;
+
+    &__heading {
+        font-family: 'Montserrat';
+        font-size: 30px;
+    }
+
+    &__text {
+        font-size: 1.0625rem;
+        color: #233142;
+        line-height: 2.05rem;
+        word-spacing: 0.5rem;
+    }
+
+    &__card {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__more {
+        color: $color-1;
+        font-size: 23px;
+    }
+
+    &__more-1 {
+        color: #000;
+        font-size: 23px;
+    }
+
+    &__icons {
+        height: 35px;
+        width: 35px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link:hover {
+        text-decoration: none;
+    }
+}
+
+.card1 {
+    transform: scale(1);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.card-body {
+    h5 {
+        font-size: 15px;
+    }
+
+    text-align: center;
+    padding: 10px !important;
+}
+
+.card-img-top {
+    border-radius: 100%;
+    display: flex;
+    flex: 0 0 150px;
+    height: 100px;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    width: 100px;
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+
+}
+
+
+.about {
+    background: #fff;
+
+    &__icon {
+        width: 100%;
+        height: auto;
+    }
+
+    &__individual {
+        position: relative;
+
+        &__icon {
+            position: absolute;
+            bottom: 246px;
+            left: -49px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+            background: #F8F8F8;
+            background-size: cover;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__quotation {
+            position: absolute;
+            bottom: 179px;
+            left: 18px;
+            width: 45px;
+            overflow: hidden;
+            z-index: 1;
+        }
+    }
+
+}
+
+.news {
+    background: #F8F8F8;
+    padding-bottom: 14.4375rem !important;
+
+    &__new {
+        position: relative;
+
+        &__item {
+            top: 4px;
+            font-size: 12px;
+            background: rgb(255, 70, 70);
+            color: #fff;
+            border-radius: 50%;
+            padding: 4px;
+        }
+    }
+
+    &__sub-heading {
+        background: $color-1;
+        color: #fff;
+        border-radius: 1.75rem;
+        padding: 0.1875rem;
+        width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 94% 53%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 94% 53%, 100% 100%, 0% 100%);
+    }
+
+    &__sub-heading1 {
+        margin-bottom: 0.6875rem;
+        background: $color-2;
+        float: left;
+        color: #fff;
+        border-radius: 1.75rem;
+        padding: 0.1875rem;
+        width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 48%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 48%);
+    }
+
+    .players {
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .players>li {
+        background: #F8F8F8;
+        border-radius: 1.75rem !important;
+        position: absolute;
+        width: 100%;
+
+        & a {
+            color: $color-1;
+        }
+    }
+
+    &__form-control {
+        border-radius: 1.25rem !important;
+        background: #F8F8F8;
+    }
+
+}
+
+.contact {
+    &__form-control {
+        border-radius: 1.25rem !important;
+    }
+
+    &__form {
+
+        &__input-group {
+            margin-bottom: 1rem !important;
+
+
+            &__form-control {
+                border-top-right-radius: 1.25rem !important;
+                border-bottom-right-radius: 1.25rem !important;
+                border-top-left-radius: 1.25rem !important;
+                border-bottom-left-radius: 1.25rem !important;
+                margin-right: 0.75rem;
+            }
+
+            &__form-control:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #233142;
+    color: #fff;
+}
+
+//Extra
+.btn-custom {
+    border-radius: 1.75rem !important;
+    color: #fff !important;
+    transition: all .2s;
+}
+
+.btn-custom:hover {
+    color: #fff;
+}

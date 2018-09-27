@@ -1,0 +1,186 @@
+body {
+    background: $bg-color !important;
+}
+
+.admin {
+
+    .card-body {
+        background: $bg-color !important;
+    }
+
+    &__card-header {
+        background: $color-2 !important;
+        border-top: $color-3 4px solid;
+        color: #fff !important;
+    }
+
+    &__card-body {
+
+
+        i {
+            font-size: 25px;
+            color: $color-3;
+        }
+    }
+
+    &__form-control {
+        border-radius: 1.25rem !important;
+        background: $bg-color;
+    }
+
+    &__upload-button {
+        border-top-left-radius: 1.25rem !important;
+        border-bottom-left-radius: 1.25rem !important;
+        background: $color-1;
+        color: #fff;
+    }
+
+    &__upload-lable {
+        border-top-right-radius: 1.25rem !important;
+        border-bottom-right-radius: 1.25rem !important;
+        background: $bg-color;
+    }
+
+    &__upload-lable::after {
+        border-top-right-radius: 1.25rem !important;
+        border-bottom-right-radius: 1.25rem !important;
+        background: $color-1;
+        color: #fff;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+
+    &__individual {
+        & a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        &__icon {
+            width: 2.5rem;
+            height: 3.375rem;
+        }
+    }
+}
+
+.add {
+    float: right;
+}
+
+.table-img {
+    height: 7rem;
+    width: 19rem !important;
+    margin: 1rem;
+}
+
+.table-add-icon {
+    font-size: 1.625rem;
+    float: right;
+}
+
+.custom-control-label {
+    padding-bottom: 1.5rem !important;
+}
+
+.social__help {
+    display: inline;
+    float: right;
+
+    & a {
+        color: $color-3;
+        font-size: 1.0625rem;
+    }
+
+    & p {
+        display: none;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 15px;
+        -webkit-clip-path: ellipse(50% 33% at 50% 48%);
+        clip-path: ellipse(50% 33% at 50% 48%);
+    }
+
+    & a:hover {
+        display: block;
+    }
+
+    & .help-animation {
+        animation: glow .5s infinite alternate;
+    }
+
+    @keyframes glow {
+        to {
+            text-shadow: 0 0 10px #fff;
+        }
+    }
+}
+
+.submit_button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.875rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: $color-3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px $color-3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
