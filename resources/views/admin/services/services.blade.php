@@ -1,0 +1,52 @@
+@extends('layouts.adminapp')
+
+@section('content')
+
+
+<section class="header py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2><i class="fas fa-cogs"></i>Services<span class="add">+</span></h2>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="menu py-4">
+    <div class="container admin">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                @include('layouts.sidenav')
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header admin__card-header">
+                        Services
+                    </div>
+                    <div class="card-body">
+                            <table class="table table-hover">
+                                    <thead>
+                                         <th>Image</th>
+                                         <th>Title</th>
+                                         <th>Edit</th>
+                                         <th>Delete</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <td><img src="" alt=""></td>
+                                        <td>PayRoll</td>
+                                        <td><a class="btn btn-sm btn-success" href="">Edit</a></td>
+                                        <td><a class="btn btn-sm btn-danger" href="">Delete</a></td>
+                                    </tbody>
+
+                                </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        @endsection

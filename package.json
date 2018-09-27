@@ -18,5 +18,11 @@
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "vue-autoscroll": "^1.1.1",
+        "vue-plugin-autoscroll": "^0.1.4",
+        "vue-typed": "^2.1.4",
+        "vue-typed-js": "^0.1.2"
     }
 }
