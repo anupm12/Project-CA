@@ -9,11 +9,12 @@
 
     &__footer-card-body {
        background-color: #181818;
+       text-align: left !important;
     }
 
     &__footer-card-heading {
         color: $footer-heading;
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     &__footer-card-text {

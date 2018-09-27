@@ -370,11 +370,11 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="text-center">
             <h4 >Made with<span> </span>by VA</h4>
         </div>
-    </footer>
+    </footer> -->
 
 @include('layouts.footer')
 

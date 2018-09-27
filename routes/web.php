@@ -87,16 +87,16 @@ Route::get('/services/single', [
 ]);
 
 Route::get('/services', [ 
-    'uses' => 'DisplayController@services',
+    'uses' => 'DisplayController@services1',
     'as' => 'services'
 ]);
 
 Route::get('/about-us' ,[
-    'uses' => 'DisplayController@about' ,
+    'uses' => 'DisplayController@about1' ,
     'as' => 'about'
 ]);
 
 Route::get('/whats-new' ,[
-    'uses' => 'DisplayController@download' ,
+    'uses' => 'DisplayController@download1' ,
     'as' => 'download'
 ]);
