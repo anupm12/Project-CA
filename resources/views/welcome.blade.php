@@ -99,7 +99,7 @@
 
     <div class="row no-row px-5 services__card">
         <div class="col-md-3 no-col pl-0 wow bounceInUp ">
-            <div class="card card1" style="width: 18rem;">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0 wow  bounceIn">
-            <div class="card card1" style="width: 18rem;">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
                 </div>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0 wow bounceInDown">
-            <div class="card card1" style="width: 18rem;">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
                 </div>
@@ -132,7 +132,7 @@
         </div>
 
         <div class="col-md-3 no-col pl-0 wow bounceIn">
-            <div class="card card1" style="width: 18rem;">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
                 </div>
@@ -194,7 +194,7 @@
                             </use>
                         </svg>
             </span>
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100" >
                 <div class="card-body">
                     <h5 class="card-title">Gaurav Mishra</h5>
                     <p><strong>Founder</strong></p>
@@ -210,17 +210,18 @@
 
      <div class="col-md-4 no-col pl-0 d-flex">
             <div class="about__individual">
-                <span class="about__individual__icon">
-                <img src="Images/Face/boy.png" alt="">
-                </span>
-                <span class="about__individual__quotation">
-                        <svg class="about__icon mr-2 mt-2">
-                                <use xlink:href="Images/sprite.svg#icon-quotation">
-                                </use>
-                            </svg>
-                </span>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card h-100" >
                     <div class="card-body">
+                            <span class="about__individual__icon">
+                                    <img src="Images/Face/boy.png" alt="">
+                                    </span>
+                                    <span class="about__individual__quotation">
+                                            <svg class="about__icon mr-2 mt-2">
+                                                    <use xlink:href="Images/sprite.svg#icon-quotation">
+                                                    </use>
+                                                </svg>
+                                    </span>
                         <h5 class="card-title">Akshay Gupta</h5>
                         <p><strong>CEO</strong></p>
                         <p>
@@ -244,7 +245,7 @@
                                     </use>
                                 </svg>
                     </span>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card h-100" >
                         <div class="card-body">
                             <h5 class="card-title">Yogesh Singh</h5>
                             <p><strong>Head of Content Design</strong></p>

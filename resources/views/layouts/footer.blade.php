@@ -6,9 +6,10 @@
                 <p class="card-text footer-1__footer-card-text">Some quick example text to build on the card title and
                     make up the bulk of the
                     card's content.</p>
+                    <img src="Images/Logo/logoWhite.svg" alt="" style="width:12rem;" class="pl-3"  >
             </div>
         </div>
-        <img src="Images/Logo/logo2-C.png" alt="" style="width:20rem;" class="pl-3"  >
+
     </div>
     <div class="col-md-3 no-col">
         <div class="card footer-1__footer-card">

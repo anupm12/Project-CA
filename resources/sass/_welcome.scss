@@ -97,6 +97,20 @@ body {
         font-size: 15px;
     }
 
+    @include mQ(722px) {
+        .carousel-indicators {
+            display: none;
+        }
+
+        .carousel-control-prev {
+            display: none;
+        }
+
+        .carousel-control-next {
+            display: none;
+        }
+    }
+
 }
 
 .highlight-text {
@@ -154,10 +168,12 @@ body {
 
 .card1 {
     transform: scale(1);
-    transition: transform 0.2s;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
 
     &:hover {
         transform: scale(1.2);
+        z-index: 10;
     }
 }
 
@@ -188,6 +204,10 @@ body {
 
 .about {
     background: #fff;
+
+    .card {
+        margin-right: 1rem;
+    }
 
     &__icon {
         width: 100%;
