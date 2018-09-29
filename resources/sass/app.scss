@@ -14,5 +14,11 @@
 @import 'contact';
 @import 'footer';
 @import 'header';
-@import 'services';
+@import 'allservices';
 @import 'download-page';
+@import 'sectors';
+@import 'serviceslist';
+
+body {
+    background-color: $body-bg;
+}

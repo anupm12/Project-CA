@@ -1,5 +1,5 @@
-<div class="col-md-3 single-list__left-list">
-    <h1 class="single-list__h1-text">Services</h1>
+<div class="col-md-3 services-list__left-list">
+    <h1 class="services-list__h1-text">Services</h1>
     <div class="list-group" id="list-tab" role="tablist">
         <a class="list-group-item list-group-item-action active text-center" id="list-home-list" data-toggle="list" href="#list-home"
             role="tab" aria-controls="home">Home</a>
@@ -11,7 +11,7 @@
             role="tab" aria-controls="settings">Settings</a>
     </div>
 </div>
-<div class="col-md-9 single-list__description">
+<div class="col-md-9 services-list__description">
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Itaque ut rem ea ipsam dolore debitis sit consequatur in, suscipit,

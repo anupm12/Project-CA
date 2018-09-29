@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -47,14 +46,14 @@
     </div>
     <div class="col-md-4 order-md-1 hero-section__text mx-auto">
         <div>
-                <h2>Experts here</h2>
-                <div id="typed-strings">
-                        <h3>Experience, <b class="highlight-text">Knowledge, </b> Dedication is what we emphasize on.</h3>
-                    </div>
-                    <h3 class="typing" id="typed"></h3>
+            <h2>Experts here</h2>
+            <div id="typed-strings">
+                <h3>Experience, <b class="highlight-text">Knowledge, </b> Dedication is what we emphasize on.</h3>
+            </div>
+            <h3 class="typing" id="typed"></h3>
 
 
-             <p class="hero-section__social-text">Know us better</h5><br>
+            <p class="hero-section__social-text">Know us better</h5><br>
                 <a href="#">
                     <svg class="hero-section__icon mr-2 mt-2">
                         <use xlink:href="Images/sprite.svg#icon-facebook">
@@ -76,6 +75,73 @@
         </div>
     </div>
 </div>
+
+
+
+<section class="sector pb-5">
+    <div class="row no-row px-5">
+        <div class="col-md-12 pl-0 py-4 no-col">
+            <p class="mt-4">
+                <h1 class="text-center pb-4">Your Business Is Our Domain</h1>
+                <h5 style=" color:#233142  ;" class="text-center">Our Umbrella Of Services</h5>
+            </p>
+        </div>
+    </div>
+
+    <div class="row no-row">
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Consultancy</h5>
+                    <p class="card-text sector__sector-card-text">Auditing advice helps you formulate your strategy for the future business diversifications and better ROI.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Specialty Services</h5>
+                    <p class="card-text sector__sector-card-text">We understand each family business is unique. Therefore, our solutions too are unique and personalized.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Audit & Assurance</h5>
+                    <p class="card-text sector__sector-card-text">Auditing needs to give authentic, actionable and insightful statements for the investors to base their investment decisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-row sector">
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Tax Planning Services</h5>
+                    <p class="card-text sector__sector-card-text">Our specialist’s tax knowledge encompasses both national & global laws of taxation.  As a result, you would get expert advice.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Growth Strategies</h5>
+                    <p class="card-text sector__sector-card-text">We provide ideas for both entrepreneurship  & venture capitalism as the need of business expansion looks for many avenues of growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Supporting Enterprise</h5>
+                    <p class="card-text sector__sector-card-text">The passion behind each business venture inspires us. Naturally, we too are passionate in providing quality ideas and insights that work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 
 
@@ -163,7 +229,22 @@
 </section>
 
 
-<section class="about py-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline align-top cool-link-main">ABOUT</p>
@@ -175,74 +256,76 @@
 
         <div class="col-md-7 pl-0 py-4 no-col">
             <p class="mt-4 services__text">
-                Call it synchronicity, kismet, or just being in the right place at the right time. Successful
-                entrepreneurs understand this paradigm shift and are doing everything to make the most of it.
-            </p>
+                Our team is full of passionate people who love to come to work. It is probably because work is not
+                regarded as a duty. It is fun! </p>
         </div>
     </div>
 
     <div class="container">
-    <div class="row no-row px-5 py-5 about__card-1">
-        <div class="col-md-4 no-col pl-0 d-flex">
-        <div class="about__individual">
-            <span class="about__individual__icon">
-            <img src="Images/Face/man.png" alt="">
-            </span>
-            <span class="about__individual__quotation">
-                    <svg class="about__icon mr-2 mt-2">
+        <div class="row no-row px-5 py-5 about__card-1">
+            <div class="col-md-4 no-col pl-0 d-flex">
+                <div class="about__individual">
+                    <span class="about__individual__icon">
+                        <img src="Images/Face/man.png" alt="">
+                    </span>
+                    <span class="about__individual__quotation">
+                        <svg class="about__icon mr-2 mt-2">
                             <use xlink:href="Images/sprite.svg#icon-quotation">
                             </use>
                         </svg>
-            </span>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Gaurav Mishra</h5>
-                    <p><strong>Founder</strong></p>
-                    <p>
-                            Gaurav qualified the CA Exams from the Institute of Chartered Accountants of India in 2016. He worked with Big 4 in Risk Advisory Department.
-                            He has experience in Risk Based Internal Audit of Manufacturing, Metal and Mining Sector.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-     </div>
-
-     <div class="col-md-4 no-col pl-0 d-flex">
-            <div class="about__individual">
-                <span class="about__individual__icon">
-                <img src="Images/Face/boy.png" alt="">
-                </span>
-                <span class="about__individual__quotation">
-                        <svg class="about__icon mr-2 mt-2">
-                                <use xlink:href="Images/sprite.svg#icon-quotation">
-                                </use>
-                            </svg>
-                </span>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Akshay Gupta</h5>
-                        <p><strong>CEO</strong></p>
-                        <p>
-                                He is qualified Law graduate and also qualified IAS Mains 2 times.
-                                Currently he is practicing at Allahabad High Court in civil laws and service matters. He has excellent liaisoning skill.
-                        </p>
+                    </span>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaurav Mishra</h5>
+                            <p><strong>Founder</strong></p>
+                            <p>
+                                Gaurav qualified the CA Exams from the Institute of Chartered Accountants of India in
+                                2016. He worked with Big 4 in Risk Advisory Department.
+                                He has experience in Risk Based Internal Audit of Manufacturing, Metal and Mining
+                                Sector.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-         </div>
-
-         <div class="col-md-4 no-col pl-0 d-flex">
+            <div class="col-md-4 no-col pl-0 d-flex">
                 <div class="about__individual">
                     <span class="about__individual__icon">
-                    <img src="Images/Face/boss.png" alt="">
+                        <img src="Images/Face/boy.png" alt="">
                     </span>
                     <span class="about__individual__quotation">
-                            <svg class="about__icon mr-2 mt-2">
-                                    <use xlink:href="Images/sprite.svg#icon-quotation">
-                                    </use>
-                                </svg>
+                        <svg class="about__icon mr-2 mt-2">
+                            <use xlink:href="Images/sprite.svg#icon-quotation">
+                            </use>
+                        </svg>
+                    </span>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Akshay Gupta</h5>
+                            <p><strong>CEO</strong></p>
+                            <p>
+                                He is qualified Law graduate and also qualified IAS Mains 2 times.
+                                Currently he is practicing at Allahabad High Court in civil laws and service matters.
+                                He has excellent liaisoning skill.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 no-col pl-0 d-flex">
+                <div class="about__individual">
+                    <span class="about__individual__icon">
+                        <img src="Images/Face/boss.png" alt="">
+                    </span>
+                    <span class="about__individual__quotation">
+                        <svg class="about__icon mr-2 mt-2">
+                            <use xlink:href="Images/sprite.svg#icon-quotation">
+                            </use>
+                        </svg>
                     </span>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
@@ -256,8 +339,8 @@
                     </div>
                 </div>
 
-             </div>
             </div>
+        </div>
 
 
     </div>
@@ -283,94 +366,97 @@
     </div>
 
     <div class="container px-5">
-    <div class="row no-row ">
-        <div class="col-md-6  align-self-end no-col pl-0 d-flex">
-                <div class="news__sub-heading wow bounceInLeft"><h4>News</h4></div>
+        <div class="row no-row ">
+            <div class="col-md-6  align-self-end no-col pl-0 d-flex">
+                <div class="news__sub-heading wow bounceInLeft">
+                    <h4>News</h4>
+                </div>
                 <ul class="list-group players mt-5">
                     <li class="list-group-item news_new"><a href="">
-                        <span class="news__new__item">New</span>
-                        Player 1
-                    </a>
+                            <span class="news__new__item">New</span>
+                            Player 1
+                        </a>
                     </li>
                     <li class="list-group-item"><a href="">Player 2</a></li>
                     <li class="list-group-item"><a href="">Player 3</a></li>
                     <li class="list-group-item"><a href="">Player 4</a></li>
                 </ul>
 
-        </div>
-        {{-- <div class="col-md-6">
-            <div class="news__sub-heading1 wow bounceInRight"><h4 class="float-right">News Letter</h4></div>
-            <form action="form-inline">
-            <div class="form-group" >
-                <input type="email" name="email" class="form-control news__form-control" placeholder="Your Email">
             </div>
-            <button type="submit" class="btn btn-custom btn-primary mb-2">Subscribe</button>
-            </form>
-        </div> --}}
-    </section>
+            {{-- <div class="col-md-6">
+                <div class="news__sub-heading1 wow bounceInRight">
+                    <h4 class="float-right">News Letter</h4>
+                </div>
+                <form action="form-inline">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control news__form-control" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-primary mb-2">Subscribe</button>
+                </form>
+            </div> --}}
+</section>
 
-    </div>
+</div>
 
 
 
 </section>
 
 <section class="contact py-5">
-        <div class="row no-row px-5">
-            <div class="col-md-4 pr-0 no-col">
-                <p class="services__heading d-inline align-top">Contact</p>
-                <svg class="services__icon mt-4">
-                    <use xlink:href="Images/sprite.svg#icon-contact">
+    <div class="row no-row px-5">
+        <div class="col-md-4 pr-0 no-col">
+            <p class="services__heading d-inline align-top">Contact</p>
+            <svg class="services__icon mt-4">
+                <use xlink:href="Images/sprite.svg#icon-contact">
+                </use>
+            </svg>
+            <p class="services__text">
+                Do you have questions about how we can help your company? Send us an query and we’ll get in touch
+                shortly, we would be delighted to speak.
+                Your details are kept strictly confidential as per our Privacy Policy.
+            </p>
+            <a href="#">
+                <svg class="hero-section__icon mr-2 mt-2">
+                    <use xlink:href="Images/sprite.svg#icon-facebook">
                     </use>
                 </svg>
-                <p class="services__text">
-                    Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit.
-                    Voluptates, repudiandae? Ipsum
-                    esse quo ad. Architecto
-                    magni porro excepturi at
-                    maiores facere!
-                </p>
-                <a href="#">
-                        <svg class="hero-section__icon mr-2 mt-2">
-                            <use xlink:href="Images/sprite.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="hero-section__icon mr-2 mt-2">
-                            <use xlink:href="Images/sprite.svg#icon-instagram">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="hero-section__icon mr-2 mt-2">
-                            <use xlink:href="Images/sprite.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-            </div>
-
-            <div class="col-md-8 pl-0 py-4 no-col">
-                <h3>Leave a Query!</h3>
-                <form action="" class="contact__form">
-                    <div class="input-group contact__form__input-group">
-                        <input class="form-control contact__form__input-group__form-control " type="text" name="name" placeholder="Your Name" />
-                        <input class="form-control contact__form__input-group__form-control" type="text" name="phone" placeholder="Your Contact Number" />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control contact__form-control" name="email" placeholder="Your Email"/>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control contact__form-control" name="content" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-custom btn-primary">Send Us</button>
-                </form>
-            </div>
+            </a>
+            <a href="#">
+                <svg class="hero-section__icon mr-2 mt-2">
+                    <use xlink:href="Images/sprite.svg#icon-instagram">
+                    </use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="hero-section__icon mr-2 mt-2">
+                    <use xlink:href="Images/sprite.svg#icon-twitter">
+                    </use>
+                </svg>
+            </a>
         </div>
-    </section>
 
-    <!-- <footer class="footer">
+        <div class="col-md-8 pl-0 py-4 no-col">
+            <h3>Leave a Query!</h3>
+            <form action="" class="contact__form">
+                <div class="input-group contact__form__input-group">
+                    <input class="form-control contact__form__input-group__form-control " type="text" name="name"
+                        placeholder="Your Name" />
+                    <input class="form-control contact__form__input-group__form-control" type="text" name="phone"
+                        placeholder="Your Contact Number" />
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control contact__form-control" name="email" placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control contact__form-control" name="content" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-primary">Send Us</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- <footer class="footer">
         <div class="text-center">
             <h4 >Made with<span> </span>by VA</h4>
         </div>
@@ -378,7 +464,7 @@
 
 @include('layouts.footer')
 
-    @endsection
+@endsection
 
 @section('page-script')
 <script type="text/javascript" src="{{URL::asset('js/wow.min.js') }}"></script>
