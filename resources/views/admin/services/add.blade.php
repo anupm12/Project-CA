@@ -26,10 +26,11 @@
                         Services
                     </div>
                     <div class="card-body"  style="text-align:start;">
-                        <form action="">
+                        <form action=" {{ route('admin.service.store')  }}  " method="post" >
+                            {{ csrf_field()  }}
                             <div class="form-group">
                                 <label for="heading">Heading</label>
-                                <input placeholder="Enter the Heading" id="heading" image="image" type="text" class="form-control admin__form-control">
+                                <input placeholder="Enter the Heading"  name="heading" id="heading" type="text" class="form-control admin__form-control">
                             </div>
 
                             <div class="form-group">
@@ -38,7 +39,7 @@
                                               <span class="input-group-text admin__upload-button" id="inputGroupFileAddon01">Upload</span>
                                             </div>
                                             <div class="custom-file">
-                                              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                              <input type="file" name="picture"  class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                               <label class="custom-file-label admin__upload-lable" for="inputGroupFile01">Choose file</label>
                                             </div>
                                           </div>

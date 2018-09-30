@@ -10,21 +10,7 @@ class DisplayController extends Controller
        return view('admin.home');
    }
 
-   public function services(){
-    return view('admin.services.services');
-    }
-
-    public function hero(){
-        return view('admin.hero.hero');
-    }
-
-    public function herotext(){
-        return view('admin.hero.herotext');
-    }
-
-    public function servicesadd(){
-        return view('admin.services.add');
-    }
+  
 
     public function social(){
         return view('admin.social');

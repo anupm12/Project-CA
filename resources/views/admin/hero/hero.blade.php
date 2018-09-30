@@ -30,16 +30,15 @@
                             <li class="list-group-item">
                                 <h3><i class="fas fa-font"></i>Text </h3>
                             </li>
-                            <li class="list-group-item">
-                               <p>Lorem ipsum dolor sit amet.</p>
+                            <li class="list-group-item text-left">
+                               <p><strong>Heading: </strong> {{ $heroText->heading  }} </p>
+                               <p><strong>Sub-heading: </strong> {{ $heroText->subheading  }} </p>
+                               <p><strong>Highlighted text: </strong> {{ $heroText->highlightedtext  }} </p>
+                               <div class="text-center">
                                <a href="" data-toggle="modal" data-target="#textModal" class="btn btn-sm btn-success btn-custom">Edit</a>
-                               <a href="" data-toggle="modal" data-target="#deleteModal" class="btn btn-sm btn-danger btn-custom">Delete</a>
+                               </div>
                             </li>
-                            <li class="list-group-item">
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <a href="" data-toggle="modal" data-target="#textModal" class="btn btn-sm btn-success btn-custom">Edit</a>
-                                    <a href="" data-toggle="modal" data-target="#deleteModal" class="btn btn-sm btn-danger btn-custom">Delete</a>
-                            </li>
+                            
 
                         </ul>
 
@@ -47,16 +46,13 @@
                             <li class="list-group-item">
                                 <h3><i class="fas fa-font"></i>Image</h3>
                             </li>
+                            @foreach ($heroImages as $heroImage)
                             <li class="list-group-item">
-                                <img src="{{ asset('Images/Carousel/img1.jpg') }}" class="w-100 table-img img-fluid" alt="">
+                                <img src="{{ $heroImage -> image }}" class="w-100 table-img img-fluid" alt="">
                                 <a href="" data-toggle="modal" data-target="#imageModal" class="btn btn-sm btn-success btn-custom">Edit</a>
                                 <a href="" data-toggle="modal" data-target="#deleteModal" class="btn btn-sm btn-danger btn-custom">Delete</a>
                             </li>
-                            <li class="list-group-item">
-                                    <img src="{{ asset('Images/Carousel/img1.jpg') }}" class="w-100 table-img img-fluid" alt="">
-                                    <a href="" data-toggle="modal" data-target="#imageModal" class="btn btn-sm btn-success btn-custom">Edit</a>
-                                    <a href="" data-toggle="modal" data-target="#deleteModal" class="btn btn-sm btn-danger btn-custom">Delete</a>
-                                </li>
+                            @endforeach
 
                         </ul>
                     </div>
@@ -68,12 +64,14 @@
     {{-- Text Modal --}}
     <div class="modal fade" id="textModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
+        <form action="  {{ route('admin.hero.editHeroText')  }} " method="post" >
+            {{  csrf_field() }}
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Edit Hero Text</h5>
 
-                            Hero Text
+                           
                             <div class="social__help">
                                 <p>Go To Setting to off this glowing effect</p>
                                <a class="help-animation" href="#"data-toggle="modal" data-target="#helpModal"><i class="fas fa-question-circle"></i>Help</a>
@@ -81,34 +79,35 @@
 
                 </div>
                 <div class="modal-body">
-                        <form action="">
+                     
                                 <div class="form-group">
-                                    <input placeholder="Heading" type="text" class="form-control admin__form-control">
+                                    <input placeholder="Heading" name="heading"  type="text" class="form-control admin__form-control">
                                 </div>
 
                                 <div class="form-group">
-                                        <input placeholder="Sub Heading" type="text" class="form-control admin__form-control">
+                                        <input placeholder="Sub Heading" name="subheading"  type="text" class="form-control admin__form-control">
                                 </div>
 
                                 <div class="form-group">
-                                        <input placeholder="Highlighted Heading" type="text" class="form-control admin__form-control">
+                                        <input placeholder="Highlighted Heading" name="highlightedtext"  type="text" class="form-control admin__form-control">
                                 </div>
-
-                                <button type="submit" class="btn btn-primary btn-custom">Submit</button>
-                            </form>
+                           
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom btn-primary">Edit Hero Text</button>
+                    <button type="submit" class="btn btn-custom btn-primary">Edit Hero Text</button>
                 </div>
             </div>
         </div>
+        </form>
     </div>
 
 
     {{-- Image Modal --}}
     <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
+        <form action="  {{ route('admin.hero.editHeroImage')  }} " method="post" >
+            {{  csrf_field() }}
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -123,20 +122,20 @@
                                                   <span class="input-group-text admin__upload-button" id="inputGroupFileAddon01">Upload</span>
                                                 </div>
                                                 <div class="custom-file">
-                                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                    <p>hello {{ $heroImage -> id  }}</p>
+                                                  <input type="file" class="custom-file-input" name="image"  id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                                   <label class="custom-file-label admin__upload-lable" for="inputGroupFile01">Choose file</label>
                                                 </div>
                                               </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary btn-custom">Submit</button>
                             </form>
                 </div>
 
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom btn-primary">Edit Hero Text</button>
+                    <button type="submit" class="btn btn-custom btn-primary">Edit Hero Image</button>
                 </div>
             </div>
         </div>

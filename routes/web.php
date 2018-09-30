@@ -22,19 +22,36 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/home', 'DisplayController@index')->name('admin.home');
 
 Route::get('/admin/services',[
-    'uses'=>'DisplayController@services',
+    'uses'=>'serviceController@services',
     'as'=>'admin.services'
 ]);
 
-Route::get('/admin/hero',[
-    'uses'=>'DisplayController@hero',
-    'as'=>'admin.hero'
+Route::post('/admin/services/store',[
+    'uses' => 'serviceController@createService',
+    'as' => 'admin.service.store'
 ]);
 
 Route::get('/admin/services/add',[
-    'uses'=>'DisplayController@servicesadd',
+    'uses'=>'serviceController@servicesadd',
     'as'=>'admin.hero'
 ]);
+
+Route::get('/admin/hero',[
+    'uses'=>'heroController@hero',
+    'as'=>'admin.hero'
+]);
+
+Route::post('/admin/hero/editText',[
+    'uses'=>'heroController@editHerotext',
+    'as'=>'admin.hero.editHeroText'
+]);
+
+Route::post('/admin/hero/editImage',[
+    'uses'=>'heroController@editHeroImage',
+    'as'=>'admin.hero.editHeroImage'
+]);
+
+
 
 Route::get('/admin/social',[
     'uses'=>'DisplayController@social',
@@ -42,7 +59,7 @@ Route::get('/admin/social',[
 ]);
 
 Route::get('/admin/hero/text',[
-    'uses'=>'DisplayController@herotext',
+    'uses'=>'heroController@herotext',
     'as'=>'admin.hero.text'
 ]);
 
