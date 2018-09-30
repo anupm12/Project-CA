@@ -1,15 +1,16 @@
 .sector {
+
     background-color: #ffffff;
     color: $color-3;
     padding: 7rem 0rem 7rem 0rem !important;
 
     &__sector-card {
-        border:none !important;
+        border: none !important;
     }
 
     &__sector-card-body {
-       background-color: #ffffff;
-       text-align: center !important;
+        background-color: #ffffff;
+        text-align: center !important;
     }
 
     &__sector-card-heading {
@@ -19,8 +20,8 @@
     }
 
     &__sector-card-text {
-       color: #CACACA;
-       font-size: 1rem;
+        color: #CACACA;
+        font-size: 1rem;
     }
-   
+
 }
