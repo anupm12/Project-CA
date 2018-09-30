@@ -3,10 +3,10 @@
 @section('content')
 
 
-<section class="header py-4">
+<section class="admin-header py-4">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row no-row px-3">
+            <div class="col-md-12 no-col">
                 <h2><i class="fas fa-download"></i>News</h2>
 
             </div>
@@ -16,11 +16,11 @@
 
 <div class="menu py-4">
     <div class="container admin">
-        <div class="row ">
-            <div class="col-md-3">
+        <div class="row no-row">
+            <div class="col-md-3 no-col">
                 @include('layouts.sidenav')
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 no-col">
                 <div class="card">
                     <div class="card-header admin__card-header">
                         About

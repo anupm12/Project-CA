@@ -89,7 +89,7 @@
             </svg>
         </div>
 
-        <div class="col-md-7 pl-0 py-4 no-col">
+        <div class="col-md-7 pl-0 py-4 col-text no-col">
             <p class="mt-4 services__text">
                 The ability to create success is the product of a unique combination of skills, mindset and abilities
                 that you can tap into again and again to achieve your biggest dreams.
@@ -97,9 +97,9 @@
         </div>
     </div>
 
-    <div class="row no-row px-5 services__card">
-        <div class="col-md-3 no-col pl-0 wow bounceInUp ">
-            <div class="card card1" style="width: 18rem;">
+    <div class="row no-row px-5 card-row services__card">
+        <div class="col-md-3 no-col card-col wow bounceInUp ">
+            <div class="card h-100 card1 " >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
                 </div>
@@ -109,8 +109,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 no-col pl-0 wow  bounceIn">
-            <div class="card card1" style="width: 18rem;">
+        <div class="col-md-3 no-col card-col pl-0 wow  bounceIn">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_188.png" alt="Card image cap">
                 </div>
@@ -120,8 +120,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 no-col pl-0 wow bounceInDown">
-            <div class="card card1" style="width: 18rem;">
+        <div class="col-md-3 no-col card-col pl-0 wow bounceInDown">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_320.png" alt="Card image cap">
                 </div>
@@ -131,8 +131,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 no-col pl-0 wow bounceIn">
-            <div class="card card1" style="width: 18rem;">
+        <div class="col-md-3 no-col card-col pl-0 wow bounceIn">
+            <div class="card h-100 card1" >
                 <div class="py-3">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/GovernanceandRiskAssurance.png" alt="Card image cap">
                 </div>
@@ -163,17 +163,17 @@
 </section>
 
 
-<section class="about py-2">
+<section class="about py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline align-top cool-link-main">ABOUT</p>
+            <p class="services__heading d-inline align-top">ABOUT</p>
             <svg class="services__icon mt-4">
                 <use xlink:href="Images/sprite.svg#icon-about-us">
                 </use>
             </svg>
         </div>
 
-        <div class="col-md-7 pl-0 py-4 no-col">
+        <div class="col-md-7 pl-0 py-4 col-text no-col">
             <p class="mt-4 services__text">
                 Call it synchronicity, kismet, or just being in the right place at the right time. Successful
                 entrepreneurs understand this paradigm shift and are doing everything to make the most of it.
@@ -182,79 +182,78 @@
     </div>
 
     <div class="container">
-    <div class="row no-row px-5 py-5 about__card-1">
-        <div class="col-md-4 no-col pl-0 d-flex">
-        <div class="about__individual">
-            <span class="about__individual__icon">
-            <img src="Images/Face/man.png" alt="">
-            </span>
-            <span class="about__individual__quotation">
-                    <svg class="about__icon mr-2 mt-2">
-                            <use xlink:href="Images/sprite.svg#icon-quotation">
-                            </use>
-                        </svg>
-            </span>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Gaurav Mishra</h5>
-                    <p><strong>Founder</strong></p>
-                    <p>
-                            Gaurav qualified the CA Exams from the Institute of Chartered Accountants of India in 2016. He worked with Big 4 in Risk Advisory Department.
-                            He has experience in Risk Based Internal Audit of Manufacturing, Metal and Mining Sector.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div class="row no-row  px-5 py-5 card-row about__card-1">
+        <div class="col-md-4 no-col card-col pl-0 d-flex">
+                <div class="card h-100 w-100 card1" >
+                        <div class="py-3">
+                            <img class="card-img-top mx-auto d-block " src="Images/Face/man.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>CA Gaurav Mishra</strong></h5>
+                            <h5>Founder</h5>
+                            <div class="about__text">
+                            <p>
+                            <i
+                            class="fas fa-quote-left" style="
+                            font-size: 22px;
+                            color: #5dcaf0;">
+                            </i>&nbsp;&nbsp;
+                            The Man behind civestt.Com
+                                Gaurav qualified the CA Exams
+                                from the Institute of Chartered Accountants of India in 2016.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
 
      </div>
 
-     <div class="col-md-4 no-col pl-0 d-flex">
-            <div class="about__individual">
-                <span class="about__individual__icon">
-                <img src="Images/Face/boy.png" alt="">
-                </span>
-                <span class="about__individual__quotation">
-                        <svg class="about__icon mr-2 mt-2">
-                                <use xlink:href="Images/sprite.svg#icon-quotation">
-                                </use>
-                            </svg>
-                </span>
-                <div class="card" style="width: 18rem;">
+     <div class="col-md-4 no-col card-col pl-0 d-flex">
+            <div class="card h-100 w-100 card1" >
+                    <div class="py-3">
+                        <img class="card-img-top mx-auto d-block " src="Images/Face/boy.png" alt="Card image cap">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Akshay Gupta</h5>
-                        <p><strong>CEO</strong></p>
-                        <p>
+                        <h5 class="card-title"><strong>Akshay Gupta</strong></h5>
+                        <h5>CEO</h5>
+                        <div class="about__text">
+                                <p>
+                                <i
+                                class="fas fa-quote-left" style="
+                                font-size: 22px;
+                                color: #5dcaf0;">
+                                </i>&nbsp;&nbsp;
                                 He is qualified Law graduate and also qualified IAS Mains 2 times.
-                                Currently he is practicing at Allahabad High Court in civil laws and service matters. He has excellent liaisoning skill.
-                        </p>
+                                </p>
+                            </div>
                     </div>
                 </div>
-            </div>
+
 
          </div>
 
-         <div class="col-md-4 no-col pl-0 d-flex">
-                <div class="about__individual">
-                    <span class="about__individual__icon">
-                    <img src="Images/Face/boss.png" alt="">
-                    </span>
-                    <span class="about__individual__quotation">
-                            <svg class="about__icon mr-2 mt-2">
-                                    <use xlink:href="Images/sprite.svg#icon-quotation">
-                                    </use>
-                                </svg>
-                    </span>
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Yogesh Singh</h5>
-                            <p><strong>Head of Content Design</strong></p>
-                            <p>
-                                He is qualified finance post graduate from Allahabad University.
-                                He has hands on experience in Accounting and Bank Audit as well project finance.
-                            </p>
+         <div class="col-md-4 no-col card-col pl-0 d-flex">
+
+                    <div class="card h-100 w-100 card1" >
+                            <div class="py-3">
+                                <img class="card-img-top mx-auto d-block " src="Images/Face/boss.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                    <h5 class="card-title"><strong>Yogesh Singh</strong></h5>
+                                    <h5>Head of Content Design</h5>
+                                    <div class="about__text">
+                                            <p>
+                                            <i
+                                            class="fas fa-quote-left" style="
+                                            font-size: 22px;
+                                            color: #5dcaf0;">
+                                            </i>&nbsp;&nbsp;
+                                            He is qualified finance post graduate from Allahabad University.
+                                            </p>
+                                        </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
              </div>
             </div>
@@ -264,14 +263,14 @@
 </section>
 
 
-<section class="news py-2">
+<section class="news py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
             <p class="services__heading d-inline cool-link-main align-top">News</p>
             <svg class="services__icon mt-4">
-                <use xlink:href="Images/sprite.svg#icon-newspaper">
-                </use>
-            </svg>
+                    <use xlink:href="Images/sprite.svg#icon-newspaper">
+                    </use>
+                </svg>
         </div>
 
         <div class="col-md-7 pl-0 py-4 no-col">
@@ -298,15 +297,16 @@
                 </ul>
 
         </div>
-        {{-- <div class="col-md-6">
-            <div class="news__sub-heading1 wow bounceInRight"><h4 class="float-right">News Letter</h4></div>
+        <div class="col-md-6">
+            {{-- <div class="news__sub-heading1 wow bounceInRight"><h4 class="float-right">News Letter</h4></div>
             <form action="form-inline">
             <div class="form-group" >
                 <input type="email" name="email" class="form-control news__form-control" placeholder="Your Email">
             </div>
             <button type="submit" class="btn btn-custom btn-primary mb-2">Subscribe</button>
-            </form>
-        </div> --}}
+            </form> --}}
+
+        </div>
     </section>
 
     </div>
@@ -370,16 +370,18 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="text-center">
             <h4 >Made with<span> </span>by VA</h4>
         </div>
-    </footer>
+    </footer> -->
 
+@include('layouts.footer')
 
     @endsection
 
 @section('page-script')
 <script type="text/javascript" src="{{URL::asset('js/wow.min.js') }}"></script>
-{{-- <script type="text/javascript" src="{{URL::asset('js/typed.js')}}"></script> --}}
+<script type="text/javascript" src="{{URL::asset('js/main.js') }}"></script>
+<script type="text/javascript" src="{{URL::asset('js/typed.js')}}"></script>
 @stop

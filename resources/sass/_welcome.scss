@@ -1,7 +1,6 @@
 .no-row {
     margin-left: 0px !important;
     margin-right: 0px !important;
-
 }
 
 .no-col {
@@ -15,7 +14,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #fff;
 }
 
@@ -27,15 +26,32 @@ body {
     a {
         margin: 0;
     }
+
+    .black-logo {
+        width: 15rem;
+        height: 3rem;
+    }
+
+    @include mQmax(480px) {
+        .black-logo {
+            width: 9rem !important;
+            height: 2.1rem !important;
+        }
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(24, 24, 24) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
 }
 
 .cool-link::after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
     background: $color-1;
-    transition: width .3s;
+    transition: width 0.3s;
     cursor: pointer;
 }
 
@@ -48,20 +64,17 @@ body {
 }
 
 .cool-link-main::after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
     background: $color-1;
-    transition: width .3s;
-
+    transition: width 0.3s;
 }
 
 .cool-link-main:hover::after {
     width: 40%;
 }
-
-
 
 .carousel .carousel-item {
     height: 500px !important;
@@ -78,7 +91,7 @@ body {
 
 .hero-section {
     h2 {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         color: #474747;
     }
 
@@ -97,21 +110,49 @@ body {
         font-size: 15px;
     }
 
+    @include mQmax(767px) {
+        .carousel-indicators {
+            display: none;
+        }
+
+        .carousel-control-prev {
+            display: none;
+        }
+
+        .carousel-control-next {
+            display: none;
+        }
+
+        .carousel .carousel-item {
+            height: 80vw !important;
+        }
+    }
+
+    @include mQmin(768px) {
+        .carousel-item img {
+            height: 100% !important;
+            background-size: cover !important;
+        }
+    }
 }
 
 .highlight-text {
     color: $color-1;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
-
 
 .services {
     color: #233142;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
+
+    .card {
+        margin-right: 1rem !important;
+        border-radius: 1.25rem !important;
+    }
 
     &__heading {
-        font-family: 'Montserrat';
-        font-size: 30px;
+        font-family: "Montserrat";
+        font-size: 1.875rem;
     }
 
     &__text {
@@ -152,14 +193,33 @@ body {
     }
 }
 
-.card1 {
-    transform: scale(1);
-    transition: transform 0.2s;
+//Services Secyion MQ
+@include mQmax(766px) {
+    .services .card {
+        margin-right: 0 !important;
+        border-radius: 0.25rem !important
+    }
 
-    &:hover {
-        transform: scale(1.2);
+    .card-row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .card-col {
+        margin-bottom: 0.75rem !important;
     }
 }
+
+// .card1 {
+//     transform: scale(1);
+//     transition: all 0.2s;
+//     margin-right: 0.5rem;
+
+//     &:hover {
+//         transform: scale(1.2);
+//         z-index: 10;
+//     }
+// }
 
 .card-body {
     h5 {
@@ -182,17 +242,26 @@ body {
     -webkit-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
     -moz-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
     box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
-
 }
-
 
 .about {
     background: #fff;
+
+    .card {
+        margin-right: 1rem;
+        border-radius: 1.25rem !important;
+    }
+
+    &__text {
+        text-align: left !important;
+    }
 
     &__icon {
         width: 100%;
         height: auto;
     }
+
+
 
     &__individual {
         position: relative;
@@ -206,7 +275,7 @@ body {
             border-radius: 50%;
             overflow: hidden;
             z-index: 1;
-            background: #F8F8F8;
+            background: #f8f8f8;
             background-size: cover;
 
             img {
@@ -224,11 +293,24 @@ body {
             z-index: 1;
         }
     }
-
 }
 
+//Abou Section MQ
+@include mQmax(766px) {
+    .about .card {
+        margin-right: 0rem !important;
+        margin-bottom: 1rem !important;
+        border-radius: 0.25rem !important;
+    }
+
+    .about__text {
+        text-align: center !important;
+    }
+}
+
+
 .news {
-    background: #F8F8F8;
+    background: #f8f8f8;
     padding-bottom: 14.4375rem !important;
 
     &__new {
@@ -275,7 +357,7 @@ body {
     }
 
     .players>li {
-        background: #F8F8F8;
+        background: #f8f8f8;
         border-radius: 1.75rem !important;
         position: absolute;
         width: 100%;
@@ -287,9 +369,8 @@ body {
 
     &__form-control {
         border-radius: 1.25rem !important;
-        background: #F8F8F8;
+        background: #f8f8f8;
     }
-
 }
 
 .contact {
@@ -298,10 +379,8 @@ body {
     }
 
     &__form {
-
         &__input-group {
             margin-bottom: 1rem !important;
-
 
             &__form-control {
                 border-top-right-radius: 1.25rem !important;
@@ -327,9 +406,86 @@ body {
 .btn-custom {
     border-radius: 1.75rem !important;
     color: #fff !important;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .btn-custom:hover {
     color: #fff;
+}
+
+//Crad Hover Effect
+.card1 {
+    transition: transform 0.5s;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-shadow: 0 8px 17px 0 rgba(94, 94, 94, 0.26),
+            0 6px 20px 0 rgba(94, 94, 94, 0.26);
+        content: "";
+        opacity: 0;
+        z-index: -1;
+        border-radius: 1.25rem;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale3d(1.006, 1.006, 1);
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+//MQ on Card Effect
+@include mQmax(776px) {
+    .card1::after {
+        border-radius: 0.25rem !important;
+    }
+}
+
+//Sections Text and Icon
+
+@include mQmax(776px) {
+    .services__icon {
+        height: 6.875rem;
+        margin-top: 0 !important;
+        width: 5.6rem;
+    }
+
+    .services__text {
+        margin-top: 0 !important;
+    }
+
+    .col-text {
+        padding-top: 0 !important;
+    }
+
+    .services__heading {
+        font-size: 1.675rem;
+    }
+
+    h2 {
+        font-size: 1.7rem !important;
+    }
+
+    h3 {
+        font-size: 1.375rem !important;
+    }
+
+}
+
+.header-icon {
+    width: 15rem;
+}
+
+@include mQmax(776px) {
+    .header-icon {
+        width: 13rem;
+    }
 }

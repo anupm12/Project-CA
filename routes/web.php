@@ -80,3 +80,23 @@ Route::get('/admin/news/add',[
     'uses'=>'DisplayController@newsAdd',
     'as'=>'admin.news.add'
 ]);
+
+Route::get('/services/single', [
+    'uses' => 'DisplayController@single',
+    'as' => 'services.single'
+]);
+
+Route::get('/services', [
+    'uses' => 'DisplayController@services1',
+    'as' => 'services'
+]);
+
+Route::get('/about-us' ,[
+    'uses' => 'DisplayController@about1' ,
+    'as' => 'about'
+]);
+
+Route::get('/whats-new' ,[
+    'uses' => 'DisplayController@download1' ,
+    'as' => 'download'
+]);

@@ -18,4 +18,12 @@ $(document).ready(function() {
     });
 });
 
+var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed:80,
+    backSpeed:80,
+    showCursor:true,
+    loop:true
+  });
+
 new WOW().init();

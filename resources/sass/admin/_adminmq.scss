@@ -1,0 +1,10 @@
+@include mQmax(776px) {
+    .list-group-custom {
+        display: none;
+    }
+
+    .social-links {
+        display: block !important;
+    }
+
+}

@@ -11,7 +11,7 @@ class DisplayController extends Controller
    }
 
    public function services(){
-    return view('admin.services');
+    return view('admin.services.services');
     }
 
     public function hero(){
@@ -57,4 +57,21 @@ class DisplayController extends Controller
     public function newsAdd(){
         return view('admin.news.add');
     }
+
+    public function single(){
+        return view('single');
+    }
+
+    public function services1(){
+        return view('services');
+    }
+
+    public function about1(){
+        return view('about');
+    }
+
+    public function download1(){
+        return view('download');
+    }
+
 }

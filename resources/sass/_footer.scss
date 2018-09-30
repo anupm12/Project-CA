@@ -1,0 +1,29 @@
+.footer-1 {
+    background-color: #181818;
+    border-bottom: 1px solid #53C7F0;
+    padding: 7rem 0rem 7rem 0rem !important;
+
+    &__footer-card {
+        border:none !important;
+    }
+
+    &__footer-card-body {
+       background-color: #181818;
+       text-align: left !important;
+    }
+
+    &__footer-card-heading {
+        color: $footer-heading;
+        font-size: 2rem !important;
+    }
+
+    &__footer-card-text {
+        color: $footer-text;
+    }
+   
+}
+
+.footer-2 {
+    background-color: #202020;
+    color: #707070;
+}

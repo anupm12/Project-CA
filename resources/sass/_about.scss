@@ -1,0 +1,51 @@
+.main-about {
+    p {
+        line-height: 23px;
+        word-spacing: 9px;
+    }
+
+}
+
+.card-img-about {
+    border-radius: 100%;
+    display: flex;
+    flex: 0 0 150px;
+    height: 9.375rem;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    width: 9.375rem;
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+}
+
+.quote {
+    background: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+
+    background-position: right;
+    color: #333;
+    height: 145px
+}
+
+.about-quote {
+    font-size: 22px;
+    color: #5dcaf0;
+    background: #181818;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-left: 0.4375rem;
+}
+
+.about-section-icon {
+    width: 15rem;
+    height: 12rem;
+}
+
+//MQ on about section icon
+@include mQmax(776px) {
+    .about-section-icon {
+        width: 9rem !important;
+    }
+}
