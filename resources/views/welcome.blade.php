@@ -79,6 +79,73 @@
 
 
 
+<section class="sector pb-5">
+    <div class="row no-row px-5">
+        <div class="col-md-12 pl-0 py-4 no-col">
+            <p class="mt-4">
+                <h1 class="text-center pb-4">Your Business Is Our Domain</h1>
+                <h5 style=" color:#233142  ;" class="text-center">Our Umbrella Of Services</h5>
+            </p>
+        </div>
+    </div>
+
+    <div class="row no-row">
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Consultancy</h5>
+                    <p class="card-text sector__sector-card-text">Auditing advice helps you formulate your strategy for the future business diversifications and better ROI.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Specialty Services</h5>
+                    <p class="card-text sector__sector-card-text">We understand each family business is unique. Therefore, our solutions too are unique and personalized.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Audit & Assurance</h5>
+                    <p class="card-text sector__sector-card-text">Auditing needs to give authentic, actionable and insightful statements for the investors to base their investment decisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-row sector">
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Tax Planning Services</h5>
+                    <p class="card-text sector__sector-card-text">Our specialist’s tax knowledge encompasses both national & global laws of taxation.  As a result, you would get expert advice.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Growth Strategies</h5>
+                    <p class="card-text sector__sector-card-text">We provide ideas for both entrepreneurship  & venture capitalism as the need of business expansion looks for many avenues of growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 no-col pl-0">
+            <div class="card sector__sector-card">
+                <div class="card-body sector__sector-card-body px-5">
+                    <h5 class="card-title sector__sector-card-heading cool-link">Supporting Enterprise</h5>
+                    <p class="card-text sector__sector-card-text">The passion behind each business venture inspires us. Naturally, we too are passionate in providing quality ideas and insights that work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
 <section class="services py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
