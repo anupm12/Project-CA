@@ -11,26 +11,29 @@
     <title>CA</title>
 
     <!-- Scripts -->
-   
-    
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top my-nav">
             <a class="navbar-brand pt-0 pb-0 mr-0 ml-0" href=".">
-            <img src="Images/Logo/logo3-C.png" alt="" style="width:15rem; height:3rem ;">
+            <img src="Images/Logo/logoBlack.svg" alt="" class="black-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span>
+                        <i class="fas fa-bars"></i>
+                </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,7 +44,7 @@
                     <li class="nav-item mx-3">
                         <a class="nav-link cool-link custom-cursor"  onClick="document.getElementById('services-section').scrollIntoView();" >SERVICES</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             UPDATES

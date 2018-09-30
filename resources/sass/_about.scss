@@ -1,88 +1,51 @@
-.about-page {
-    position: relative;
-
-    &__profile-image-1 {
-        position: absolute;
-        left: 4.5rem;
-        top: 3rem;
-        width: 200px;
-        height: 200px;
-        padding: 25px 35px 25px 35px;
-        border: 1px solid #707070;
-        border-radius: 50%;
-        overflow: hidden;
-        background-size: cover;
-        z-index: 1;
-        background-color: #e7e7e7;
+.main-about {
+    p {
+        line-height: 23px;
+        word-spacing: 9px;
     }
 
-    &__profile-text-1 {
-        border: 1px solid #707070;
-        width: 55rem;
-        height: 27rem;
-        position: absolute;
-        left: 13rem;
-        top: 7rem;
-        font-size: 1rem;
+}
 
-        h1 {
-            padding: 3rem 0rem 3rem 5rem !important;
-        }
-    }
+.card-img-about {
+    border-radius: 100%;
+    display: flex;
+    flex: 0 0 150px;
+    height: 9.375rem;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    width: 9.375rem;
+    -webkit-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    -moz-box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+    box-shadow: 0px 0px 50px -19px rgba(66, 71, 74, 1);
+}
 
-    &__profile-image-2 {
-        position: absolute;
-        left: 1rem;
-        top: 33rem;
-        width: 150px;
-        height: 150px;
-        padding: 25px 35px 25px 35px;
-        border: 1px solid #707070;
-        border-radius: 50%;
-        overflow: hidden;
-        background-size: cover;
-        z-index: 1;
-        background-color: #e7e7e7;
-    }
+.quote {
+    background: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
 
-    &__profile-text-2 {
-        border: 1px solid #707070;
-        width: 30rem;
-        height: 15rem;
-        position: absolute;
-        left: 6rem;
-        top: 36rem;
+    background-position: right;
+    color: #333;
+    height: 145px
+}
 
-        h1 {
-            padding: 3rem 0rem 2rem 5rem !important;
-        }
-    }
+.about-quote {
+    font-size: 22px;
+    color: #5dcaf0;
+    background: #181818;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-left: 0.4375rem;
+}
 
-    &__profile-image-3 {
-        position: absolute;
-        left: 45rem;
-        top: 33rem;
-        width: 150px;
-        height: 150px;
-        padding: 25px 35px 25px 35px;
-        border: 1px solid #707070;
-        border-radius: 50%;
-        overflow: hidden;
-        background-size: cover;
-        z-index: 1;
-        background-color: #e7e7e7;
-    }
+.about-section-icon {
+    width: 15rem;
+    height: 12rem;
+}
 
-    &__profile-text-3 {
-        border: 1px solid #707070;
-        width: 30rem;
-        height: 20rem;
-        position: absolute;
-        left: 50rem;
-        top: 36rem;
-
-        h1 {
-            padding: 3rem 0rem 2rem 5rem !important;
-        }
+//MQ on about section icon
+@include mQmax(776px) {
+    .about-section-icon {
+        width: 9rem !important;
     }
 }

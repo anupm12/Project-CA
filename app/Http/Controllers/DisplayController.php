@@ -11,7 +11,7 @@ class DisplayController extends Controller
    }
 
    public function services(){
-    return view('admin.services');
+    return view('admin.services.services');
     }
 
     public function hero(){

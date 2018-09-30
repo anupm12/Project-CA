@@ -3,10 +3,10 @@
 @section('content')
 
 
-<section class="header py-4">
+<section class="admin-header py-4">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row no-row">
+            <div class="col-md-12 no-col">
                 <h2><i class="fas fa-tachometer-alt"></i>Dashboard</h2>
             </div>
         </div>
@@ -15,8 +15,8 @@
 
 <div class="menu py-4">
     <div class="container admin">
-        <div class="row justify-content-center">
-            <div class="col-md-3">
+        <div class="row justify-content-center no-row">
+            <div class="col-md-3 no-col">
                 <ul class="list-group list-group-custom">
                     <li class="list-group-item "><a href="#"><i class="fas fa-tachometer-alt"></i>Dasboard</a></li>
                     <li class="list-group-item"><a href="#" data-toggle="collapse" data-target="#hero-section"><i class="fas fa-file"></i>Hero
@@ -31,14 +31,14 @@
                     <li class="list-group-item"><a href="#"><i class="fas fa-address-card"></i>Contact</a></li>
                 </ul>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 no-col">
                 <div class="card">
                     <div class="card-header admin__card-header">
                         WebSite Overview
                     </div>
                     <div class="card-body">
                         <div class="container">
-                            <div class="row">
+                            <div class="row no-row">
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-body admin__card-body">
@@ -90,8 +90,8 @@
 
             {{-- Row -2 --}}
             <div class="container my-4">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row no-row">
+                    <div class="col-md-6 no-col">
                         <div class="card">
                             <div class="card-header admin__card-header">
                                 Messages <i class="fas fa-comments"></i>

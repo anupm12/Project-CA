@@ -81,12 +81,12 @@ Route::get('/admin/news/add',[
     'as'=>'admin.news.add'
 ]);
 
-Route::get('/services/single', [ 
+Route::get('/services/single', [
     'uses' => 'DisplayController@single',
     'as' => 'services.single'
 ]);
 
-Route::get('/services', [ 
+Route::get('/services', [
     'uses' => 'DisplayController@services1',
     'as' => 'services'
 ]);
