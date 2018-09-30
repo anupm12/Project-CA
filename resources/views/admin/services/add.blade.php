@@ -26,7 +26,7 @@
                         Services
                     </div>
                     <div class="card-body"  style="text-align:start;">
-                        <form action=" {{ route('admin.service.store')  }}  " method="post" >
+                        <form action=" {{ route('admin.service.store')  }}  " method="post" enctype="multipart/form-data" >
                             {{ csrf_field()  }}
                             <div class="form-group">
                                 <label for="heading">Heading</label>

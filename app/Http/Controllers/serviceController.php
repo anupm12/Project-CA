@@ -25,7 +25,7 @@ class serviceController extends Controller
 
         $image = $request -> picture;
         $image_new = time().$image->getClientOriginalName();
-        dd($request->picture,$image_new);
+        // dd($request->picture,$image_new);
         $image -> move('Images/Services', $image_new);
         // dd($image);
 
