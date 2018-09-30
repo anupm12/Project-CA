@@ -1,0 +1,8 @@
+public/css/app.css
+resources/sass/_welcome.scss
+resources/sass/app.scss
+resources/views/about.blade.php
+resources/views/services.blade.php
+resources/views/welcome.blade.php
+
+

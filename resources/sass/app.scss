@@ -6,10 +6,12 @@
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
+@import 'mixin';
 
 @import 'welcome';
 @import 'admin/sidenav';
 @import 'admin/other';
+@import 'admin/adminmq';
 @import 'about';
 @import 'contact';
 @import 'footer';
@@ -18,6 +20,9 @@
 @import 'download-page';
 @import 'sectors';
 @import 'serviceslist';
+
+
+
 
 body {
     background-color: $body-bg;
