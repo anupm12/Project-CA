@@ -1,0 +1,11 @@
+@mixin mQmax($arg) {
+    @media screen and(max-width: $arg) {
+        @content;
+    }
+}
+
+@mixin mQmin($arg) {
+    @media screen and(min-width: $arg) {
+        @content;
+    }
+}
