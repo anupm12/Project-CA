@@ -11279,6 +11279,33 @@ input:checked + .slider:before {
   }
 }
 
+.contact__contact-card {
+  border: none;
+  background-color: #EDEDED;
+}
+
+.contact__contact-text {
+  font-size: 1rem;
+}
+
+.map {
+  border: 1px solid #53C7F0;
+  padding-bottom: 2rem;
+}
+
+.mapouter {
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
 .footer-1 {
   background-color: #181818;
   border-bottom: 1px solid #53C7F0;
@@ -11315,14 +11342,13 @@ input:checked + .slider:before {
 .header__h1-text {
   padding-top: 7rem;
   padding-bottom: 3rem;
-  padding-left: 3rem;
   letter-spacing: 0.15rem;
   color: #707070;
 }
 
 .header__top-icon {
-  height: 11rem;
-  width: 19rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .service-card {

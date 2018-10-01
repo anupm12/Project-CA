@@ -60,4 +60,7 @@ class DisplayController extends Controller
         return view('download');
     }
 
+    public function contact(){
+        return view('contact');
+    }
 }

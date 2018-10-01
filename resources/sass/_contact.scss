@@ -1,0 +1,28 @@
+.contact{
+    &__contact-card{
+        border: none;
+        background-color: #EDEDED;
+    }
+
+    &__contact-text{
+        font-size: 1rem;
+    }
+} 
+
+.map {
+   border: 1px solid #53C7F0;
+   padding-bottom: 2rem;
+}
+
+.mapouter {
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}

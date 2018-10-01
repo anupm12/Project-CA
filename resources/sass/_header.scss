@@ -1,15 +1,15 @@
 .header {
     background-color: #f8f8f8;
-        &__h1-text {
-            padding-top: 7rem;
-            padding-bottom: 3rem;
-            padding-left: 3rem;
-            letter-spacing: 0.15rem;
-            color: #707070;
-        }
 
-        &__top-icon {
-            height: 11rem;
-            width: 19rem;
-        }
+    &__h1-text {
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        letter-spacing: 0.15rem;
+        color: #707070;
+    }
+
+    &__top-icon {
+        max-width: 100%;
+        height: auto;
+    }
 }

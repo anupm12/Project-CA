@@ -3,7 +3,7 @@
 @section('content')
 
 
-@include('layouts.header')
+@include('layouts.servicesheader')
 
 <div class="row no-row service-list">
     @include('layouts.serviceslist')

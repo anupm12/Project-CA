@@ -117,3 +117,10 @@ Route::get('/whats-new' ,[
     'uses' => 'DisplayController@download1' ,
     'as' => 'download'
 ]);
+
+
+
+Route::get('/contact-us',[
+    'uses' => 'DisplayController@contact',
+    'as' => 'contact'
+]);
