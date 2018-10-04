@@ -38,10 +38,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active mx-3">
-                        <a href=" {{ route('welcome')  }}" class="nav-link cool-link">HOME <span class="sr-only">(current)</span></a>
+                    <li class="nav-item mx-3 {{ Request::is('/') ? 'active' : '' }} ">
+                        <a href=" {{ route('welcome')  }}" class="nav-link cool-link">HOME</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-3 {{ Request::is('all-services') ? 'active' : '' }} ">
                         <a href=" {{ route('allservices')  }}" class="nav-link cool-link">SERVICES</a>
                     </li>
                     <li class="nav-item mx-3 dropdown">
@@ -59,10 +59,10 @@
                     <!-- <li class="nav-item mx-3">
                         <a class="nav-link cool-link" href="#">BLOG</a>
                     </li> -->
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-3 {{ Request::is('contact-us') ? 'active' : '' }} ">
                         <a href=" {{ route('contact')  }}" class="nav-link cool-link">CONTACT</a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-3 {{ Request::is('about-us') ? 'active' : '' }} ">
                         <a class="nav-link cool-link" href=" {{ route('about')  }}">ABOUT</a>
                     </li>
                 </ul>
