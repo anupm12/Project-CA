@@ -50,7 +50,7 @@
                             UPDATES
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item">BULLETIN</a>
+                            <a class="dropdown-item" onClick="document.getElementById('bulletin-section').scrollIntoView();">BULLETIN</a>
                             <a class="dropdown-item" href="#">What's new</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item highlight-text">UPDATED EVERYDAY</a>

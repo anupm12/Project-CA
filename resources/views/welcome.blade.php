@@ -360,7 +360,7 @@
         </div>
     </div>
 
-    <div class="container px-5">
+    <div id="bulletin-section" class="container px-5">
         <div class="row no-row ">
             <div class="col-md-6  align-self-end no-col pl-0 d-flex">
                 <div class="news__sub-heading wow bounceInLeft">
