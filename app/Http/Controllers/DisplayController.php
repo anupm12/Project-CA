@@ -54,4 +54,12 @@ class DisplayController extends Controller
     public function allServices(){
         return view('allservices');
     }
+
+    public function about1(){
+        return view('about');
+    }
+
+    public function welcome(){
+        return view('welcome');
+    }
 }
