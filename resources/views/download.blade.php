@@ -3,7 +3,16 @@
 @section('content')
 
 
-@include('layouts.header')
+<div class="header" style="display:flex;justify-content: space-around;">
+    <div class="text-center">
+        <h1 class="header__h1-text">What's New</h1>
+    </div>
+    <div class="align-items-center justify-content-center">
+        <img class="header-icon" src="/Images/other/aboutUs.svg" class="header__top-icon" alt="">
+    </div>
+</div>
+
+
 
 <div class="row no-row p-5 service-card">
     <div class="col-md-12 no-col">
