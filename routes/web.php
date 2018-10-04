@@ -116,6 +116,11 @@ Route::get('/all-services',[
     'as' => 'allservices'
 ]);
 
+Route::get('/single',[
+    'uses' => 'DisplayController@single',
+    'as' => 'single'
+]);
+
 Route::get('/about-us' ,[
     'uses' => 'DisplayController@about1' ,
     'as' => 'about'

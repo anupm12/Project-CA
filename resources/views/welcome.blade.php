@@ -217,7 +217,7 @@
 
     <div class="row no-row">
         <div class="col-md-6 no-col text-center py-5">
-            <a href="#" class="services__link">
+            <a href=" {{ route('allservices')  }}  " class="services__link">
                 <b class="services__more">
                     M<b class="services__more-1">OR</b>E
                 </b>
@@ -276,8 +276,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="col-md-4 no-col card-col pl-0 d-flex">
@@ -299,12 +297,9 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="col-md-4 no-col card-col pl-0 d-flex">
-
                 <div class="card h-100 w-100 card1">
                     <div class="py-3">
                         <img class="card-img-top mx-auto d-block " src="Images/Face/boss.png" alt="Card image cap">
@@ -323,11 +318,26 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
 
+    <div class="row no-row">
+        <div class="col-md-6 no-col text-center py-5">
+            <a href=" {{ route('about')  }}  " class="services__link">
+                <b class="services__more">
+                    M<b class="services__more-1">OR</b>E
+                </b>
 
+                <svg class="services__icons mr-2 mt-2">
+                    <use xlink:href="Images/sprite.svg#icon-right-arrow">
+                    </use>
+                </svg>
+            </a>
+        </div>
+        <div class="col-md-6 no-col">
+
+        </div>
     </div>
 </section>
 

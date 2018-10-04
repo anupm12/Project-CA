@@ -39,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mx-3">
-                        <a href=" {{ route('welcome')  }}" class="nav-link cool-link custom-cursor" onClick="document.getElementById('home-section').scrollIntoView();" >HOME <span class="sr-only">(current)</span></a>
+                        <a href=" {{ route('welcome')  }}" class="nav-link cool-link">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor"  onClick="document.getElementById('services-section').scrollIntoView();" >SERVICES</a>
+                        <a href=" {{ route('allservices')  }}" class="nav-link cool-link">SERVICES</a>
                     </li>
                     <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -50,20 +50,20 @@
                             UPDATES
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item"  onClick="document.getElementById('bulletin-section').scrollIntoView();" >BULLETIN</a>
+                            <a class="dropdown-item">BULLETIN</a>
                             <a class="dropdown-item" href="#">What's new</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item highlight-text custom-cursor">UPDATED EVERYDAY</a>
+                            <a class="dropdown-item highlight-text">UPDATED EVERYDAY</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item mx-3">
                         <a class="nav-link cool-link" href="#">BLOG</a>
                     </li> -->
                     <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor"  onClick="document.getElementById('contact-section').scrollIntoView();" >CONTACT</a>
+                        <a href=" {{ route('contact')  }}" class="nav-link cool-link">CONTACT</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor" href=" {{ route('about')  }}" onClick="document.getElementById('about-section').scrollIntoView();" >ABOUT</a>
+                        <a class="nav-link cool-link" href=" {{ route('about')  }}">ABOUT</a>
                     </li>
                 </ul>
 
