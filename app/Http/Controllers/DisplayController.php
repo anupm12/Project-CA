@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 
 class DisplayController extends Controller
 {
-   public function index(){
+    public function index(){
        return view('admin.home');
-   }
-
-  
+    }
 
     public function social(){
         return view('admin.social');
@@ -44,23 +42,16 @@ class DisplayController extends Controller
         return view('admin.news.add');
     }
 
-    public function single(){
-        return view('single');
-    }
 
-    public function services1(){
-        return view('services');
-    }
 
-    public function about1(){
-        return view('about');
-    }
 
-    public function download1(){
-        return view('download');
-    }
+
 
     public function contact(){
         return view('contact');
+    }
+
+    public function allServices(){
+        return view('allservices');
     }
 }

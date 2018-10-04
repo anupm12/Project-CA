@@ -98,14 +98,21 @@ Route::get('/admin/news/add',[
     'as'=>'admin.news.add'
 ]);
 
-Route::get('/services/single', [
-    'uses' => 'DisplayController@single',
-    'as' => 'services.single'
-]);
 
-Route::get('/services', [
-    'uses' => 'DisplayController@services1',
-    'as' => 'services'
+
+
+
+
+
+// <<<<<<<<<<<<<<<<<<<<<<<TEMPORARY>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+Route::get('/all-services',[
+    'uses' => 'DisplayController@allServices',
+    'as' => 'allservices'
 ]);
 
 Route::get('/about-us' ,[
@@ -117,8 +124,6 @@ Route::get('/whats-new' ,[
     'uses' => 'DisplayController@download1' ,
     'as' => 'download'
 ]);
-
-
 
 Route::get('/contact-us',[
     'uses' => 'DisplayController@contact',

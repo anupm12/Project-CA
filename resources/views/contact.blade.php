@@ -149,11 +149,11 @@ function initMap() {
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script> -->
 
-    
+
 
 <div class="map"  >
-<div class="mapouter">
-    <div class="gmap_canvas">
+<div class="map__mapouter">
+    <div class="map__gmap_canvas">
         <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=hospet&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
         </iframe>
@@ -161,6 +161,7 @@ function initMap() {
     </div>
     </div>
 </div>
+
 
 @include('layouts.footer')
 

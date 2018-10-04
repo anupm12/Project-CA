@@ -14,6 +14,7 @@
     </div>
 </div>
 
+@include('layouts.contact')
 @include('layouts.footer')
 
 @endsection
