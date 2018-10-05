@@ -1,6 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
 
 // Variables
 @import 'variables';
@@ -21,3 +21,11 @@
 @import 'download-page';
 @import 'sectors';
 @import 'serviceslist';
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+}

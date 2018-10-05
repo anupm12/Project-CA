@@ -29,7 +29,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css">
     <!-- Styles -->
 <link rel="stylesheet" href="{{ asset('css/animate.css') }}" >
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -38,10 +38,14 @@
 <body>
     <div id="app">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light admin-nav">
-            <a class="navbar-brand" href=".">Brand</a>
+            <a class="navbar-brand" href="."><img src="{{ asset('Images/Logo/logoWhite.svg') }}" alt="" class="black-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span>
+                    <i class="fas fa-bars" style="
+                    color: #7de2d1;
+                "></i>
+            </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -71,6 +75,7 @@
 
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.min.js"></script>
     @yield('page-script')
 </body>
 </html>

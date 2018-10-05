@@ -1,5 +1,5 @@
 .admin-header {
-    background: $color-3;
+    background: #339989;
 
     h2 {
         color: #fff;
@@ -12,7 +12,7 @@
 
 .admin-nav {
     min-height: 2.0625rem !important;
-    background: $color-2 !important;
+    background: #131515 !important;
     margin-bottom: 0;
     border-radius: 0;
 
@@ -29,11 +29,12 @@
 
 .list-group-custom {
     li {
-        background: $color-3 !important;
+        background: #131515 !important;
     }
 
     .active {
-        background: $color-1 !important;
+        background: #7DE2D1 !important;
+        border-color: #7DE2D1 !important
     }
 
     a {

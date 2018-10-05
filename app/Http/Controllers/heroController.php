@@ -32,21 +32,24 @@ class heroController extends Controller
         return redirect()->back();
     }
 
-    public function editHeroImage(Request $request,$id){
+    public function editHeroImage(Request $request){
+
         $this -> validate($request, [
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:500',
         ]);
 
-        $heroImage = HeroImage::find($id);
+        $heroImage = HeroImage::find($request->id);
 
         if($request -> hasfile('image')){
             $image = $request -> image;
-            $image_new = time().$picture->getClientOriginalName();
+            $image_new = time().$image->getClientOriginalName();
             $image -> move('Images/Carousel', $image_new);
 
             $heroImage -> image = '/Images/Carousel/'.$image_new;
 
         }
+
+        $heroImage->save();
 
         return redirect()->back();
     }

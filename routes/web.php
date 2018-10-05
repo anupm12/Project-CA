@@ -46,16 +46,26 @@ Route::post('/admin/hero/editText',[
     'as'=>'admin.hero.editHeroText'
 ]);
 
-Route::post('/admin/hero/editImage',[
+Route::patch('/admin/hero/editImage',[
     'uses'=>'heroController@editHeroImage',
     'as'=>'admin.hero.editHeroImage'
 ]);
 
 
-
+// Social
 Route::get('/admin/social',[
-    'uses'=>'DisplayController@social',
+    'uses'=>'socialController@social',
     'as'=>'admin.social'
+]);
+
+Route::post('/admin/social/add/{id}',[
+    'uses'=>'socialController@socialAdd',
+    'as'=>'admin.social.add'
+]);
+
+Route::patch('/admin/social/save',[
+    'uses'=>'socialController@socialSave',
+    'as'=>'admin.social.save'
 ]);
 
 Route::get('/admin/hero/text',[
@@ -88,14 +98,25 @@ Route::get('/admin/about/add',[
     'as'=>'admin.about.add'
 ]);
 
+//News
 Route::get('/admin/news',[
-    'uses'=>'DisplayController@news',
+    'uses'=>'newsController@news',
     'as'=>'admin.news'
 ]);
 
-Route::get('/admin/news/add',[
-    'uses'=>'DisplayController@newsAdd',
+Route::post('/admin/news/add',[
+    'uses'=>'newsController@newsAdd',
     'as'=>'admin.news.add'
+]);
+
+Route::patch('/admin/news/edit',[
+    'uses'=>'newsController@newsEdit',
+    'as'=>'admin.news.edit'
+]);
+
+Route::patch('admin/news/delete',[
+    'uses'=>'newsController@newsDelete',
+    'as'=>'admin.news.delete'
 ]);
 
 Route::get('/services/single', [

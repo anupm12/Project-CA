@@ -149,7 +149,7 @@
 <section class="services py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline align-top">SERVICES</p>
+            <h3 class="services__heading d-inline align-top">SERVICES</h3>
             <svg class="services__icon mt-4">
                 <use xlink:href="Images/sprite.svg#icon-services">
                 </use>
@@ -233,7 +233,7 @@
 <section class="about py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline align-top">ABOUT</p>
+            <h3 class="services__heading d-inline align-top">ABOUT</h3>
             <svg class="services__icon mt-4">
                 <use xlink:href="Images/sprite.svg#icon-about-us">
                 </use>
@@ -330,10 +330,10 @@
 </section>
 
 
-<section class="news py-5">
+<section id="bulletin-section" class="news py-5">
     <div class="row no-row px-5">
         <div class="col-md-5 pr-0 no-col">
-            <p class="services__heading d-inline cool-link-main align-top">News</p>
+            <h3 class="services__heading d-inline cool-link-main align-top">News</h3>
             <svg class="services__icon mt-4">
                     <use xlink:href="Images/sprite.svg#icon-newspaper">
                     </use>
@@ -385,7 +385,7 @@
 <section class="contact py-5">
         <div class="row no-row px-5">
             <div class="col-md-4 pr-0 no-col">
-                <p class="services__heading d-inline align-top">Contact</p>
+                <h3 class="services__heading d-inline align-top">Contact</h3>
                 <svg class="services__icon mt-4">
                     <use xlink:href="Images/sprite.svg#icon-contact">
                     </use>

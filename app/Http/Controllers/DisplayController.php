@@ -10,11 +10,6 @@ class DisplayController extends Controller
        return view('admin.home');
    }
 
-  
-
-    public function social(){
-        return view('admin.social');
-    }
 
     public function setting(){
         return view('admin.setting');
@@ -36,20 +31,13 @@ class DisplayController extends Controller
         return view('admin.about.add');
     }
 
-    public function news(){
-        return view('admin.news.news');
-    }
-
-    public function newsAdd(){
-        return view('admin.news.add');
-    }
 
     public function single(){
         return view('single');
     }
 
     public function services1(){
-        return view('services');
+        return view('allservices');
     }
 
     public function about1(){

@@ -2,6 +2,10 @@ body {
     background: $bg-color !important;
 }
 
+.admin-icon {
+    color: #339989;
+}
+
 .admin {
 
     .card-body {
@@ -9,8 +13,8 @@ body {
     }
 
     &__card-header {
-        background: $color-2 !important;
-        border-top: $color-3 4px solid;
+        background: #2B2C28 !important;
+        border-top: #7DE2D1 4px solid;
         color: #fff !important;
     }
 
@@ -31,7 +35,7 @@ body {
     &__upload-button {
         border-top-left-radius: 1.25rem !important;
         border-bottom-left-radius: 1.25rem !important;
-        background: $color-1;
+        background: #2b2c28;
         color: #fff;
     }
 
@@ -44,7 +48,7 @@ body {
     &__upload-lable::after {
         border-top-right-radius: 1.25rem !important;
         border-bottom-right-radius: 1.25rem !important;
-        background: $color-1;
+        background: #7de2d1;
         color: #fff;
     }
 }
@@ -90,7 +94,7 @@ body {
     float: right;
 
     & a {
-        color: $color-3;
+        color: #7de2d1;
         font-size: 1.0625rem;
     }
 
@@ -113,7 +117,7 @@ body {
 
     @keyframes glow {
         to {
-            text-shadow: 0 0 10px #fff;
+            text-shadow: 0 0 10px #339989;
         }
     }
 }
@@ -145,7 +149,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #2b2c28;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -157,13 +161,13 @@ body {
     width: 21px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: $color-3;
+    background-color: #339989;
 }
 
 input:focus+.slider {
@@ -183,4 +187,88 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+//Checkbox Switch
+.disable {
+    background-color: #2B2C28 !important;
+}
+
+.disable:hover {
+    cursor: not-allowed;
+}
+
+
+
+.switch-c {
+    width: 45px !important;
+    height: 20px !important;
+}
+
+.slider.round-c {
+    border-radius: 15px !important;
+}
+
+.slider-c::before {
+    height: 12px !important;
+    width: 12px !important;
+}
+
+
+//Underline
+.p-line {
+    border-bottom: 1px solid #339989;
+    padding-bottom: 5px;
+}
+
+//Modal
+.modal-content {
+    background: #2B2C28;
+}
+
+.modal-header {
+    color: #7DE2D1;
+    border-top: 1px solid #7DE2D1;
+}
+
+.modal-body {
+    background: #fff;
+}
+
+.modal-footer {
+    background: #fff;
+}
+
+.close span {
+    color: #7DE2D1;
+}
+
+//////////Tool Tip ////////////
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
