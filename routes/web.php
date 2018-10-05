@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses'=>'DisplayController@welcome',
+    'as'=>'welcome'
+]);
 
 Auth::routes();
 
@@ -124,9 +125,16 @@ Route::get('/services/single', [
     'as' => 'services.single'
 ]);
 
-Route::get('/services', [
-    'uses' => 'DisplayController@services1',
-    'as' => 'services'
+
+
+Route::get('/all-services',[
+    'uses' => 'DisplayController@allServices',
+    'as' => 'allservices'
+]);
+
+Route::get('/single',[
+    'uses' => 'DisplayController@single',
+    'as' => 'single'
 ]);
 
 Route::get('/about-us' ,[
@@ -137,4 +145,9 @@ Route::get('/about-us' ,[
 Route::get('/whats-new' ,[
     'uses' => 'DisplayController@download1' ,
     'as' => 'download'
+]);
+
+Route::get('/contact-us',[
+    'uses' => 'DisplayController@contact',
+    'as' => 'contact'
 ]);

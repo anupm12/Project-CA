@@ -3,7 +3,15 @@
 @section('content')
 
 
-@include('layouts.header')
+<div class="header" style="display:flex;justify-content: space-around;">
+    <div class="text-center">
+        <h1 class="header__h1-text">Know Us Better</h1>
+    </div>
+    <div class="align-items-center justify-content-center">
+        <img class="header-icon" src="/Images/other/aboutUs.svg" class="header__top-icon" alt="">
+    </div>
+</div>
+
 
 
 <section class="main-about">
@@ -65,7 +73,7 @@
         </div>
     </div>
 
-    {{-- <div class=" py-4">
+     <!-- <div class=" py-4">
         <div class="row no-row quote px-4">
             <div class="col-md-6 no-col">
 
@@ -79,7 +87,7 @@
                 <img src="Images/other/effort.svg" alt="">
             </div>
         </div>
-    </div> --}}
+    </div>  -->
 
     <div class="container">
             <div class="row no-row py-4">
@@ -166,7 +174,7 @@
 </section>
 
 
-
+@include('layouts.contact')
 @include('layouts.footer')
 
 @endsection

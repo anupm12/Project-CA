@@ -26,7 +26,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top my-nav">
-            <a class="navbar-brand pt-0 pb-0 mr-0 ml-0" href=".">
+            <a class="navbar-brand pt-0 pb-0 mr-0 ml-0" href=" {{ route('welcome')  }}  ">
             <img src="Images/Logo/logoBlack.svg" alt="" class="black-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -38,11 +38,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active mx-3">
-                        <a class="nav-link cool-link custom-cursor" onClick="document.getElementById('home-section').scrollIntoView();" >HOME <span class="sr-only">(current)</span></a>
+                    <li class="nav-item mx-3 {{ Request::is('/') ? 'active' : '' }} ">
+                        <a href=" {{ route('welcome')  }}" class="nav-link cool-link">HOME</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor"  onClick="document.getElementById('services-section').scrollIntoView();" >SERVICES</a>
+                    <li class="nav-item mx-3 {{ Request::is('all-services') ? 'active' : '' }} ">
+                        <a href=" {{ route('allservices')  }}" class="nav-link cool-link">SERVICES</a>
                     </li>
                     <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -50,20 +50,20 @@
                             UPDATES
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item"  onClick="document.getElementById('bulletin-section').scrollIntoView();" >BULLETIN</a>
+                            <a class="dropdown-item" onClick="document.getElementById('bulletin-section').scrollIntoView();">BULLETIN</a>
                             <a class="dropdown-item" href="#">What's new</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item highlight-text custom-cursor">UPDATED EVERYDAY</a>
+                            <a class="dropdown-item highlight-text">UPDATED EVERYDAY</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item mx-3">
                         <a class="nav-link cool-link" href="#">BLOG</a>
                     </li> -->
-                    <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor"  onClick="document.getElementById('contact-section').scrollIntoView();" >CONTACT</a>
+                    <li class="nav-item mx-3 {{ Request::is('contact-us') ? 'active' : '' }} ">
+                        <a href=" {{ route('contact')  }}" class="nav-link cool-link">CONTACT</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link cool-link custom-cursor" onClick="document.getElementById('about-section').scrollIntoView();" >ABOUT</a>
+                    <li class="nav-item mx-3 {{ Request::is('about-us') ? 'active' : '' }} ">
+                        <a class="nav-link cool-link" href=" {{ route('about')  }}">ABOUT</a>
                     </li>
                 </ul>
 

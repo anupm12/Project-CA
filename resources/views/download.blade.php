@@ -3,7 +3,16 @@
 @section('content')
 
 
-@include('layouts.header')
+<div class="header" style="display:flex;justify-content: space-around;">
+    <div class="text-center">
+        <h1 class="header__h1-text">Get In Touch</h1>
+    </div>
+    <div class="align-items-center justify-content-center">
+        <img class="header__top-icon header-icon img-fluid" src="/Images/SVG/contact.svg" alt="">
+    </div>
+</div>
+
+
 
 <div class="row no-row p-5 service-card">
     <div class="col-md-12 no-col">
@@ -14,6 +23,7 @@
     </div>
 </div>
 
+@include('layouts.contact')
 @include('layouts.footer')
 
 @endsection
