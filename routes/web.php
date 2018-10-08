@@ -69,24 +69,57 @@ Route::patch('/admin/social/save',[
     'as'=>'admin.social.save'
 ]);
 
-Route::get('/admin/hero/text',[
-    'uses'=>'heroController@herotext',
-    'as'=>'admin.hero.text'
+//Messages
+Route::get('/admin/inbox',[
+    'uses'=>'messageController@index',
+    'as'=>'admin.inbox'
 ]);
+
+Route::get('/admin/message/favorite',[
+    'uses' => 'messageController@favIndex',
+    'as'=>'admin.message.favorite'
+]);
+
+Route::post('/message',[
+    'uses'=>'messageController@message',
+    'as'=>'message'
+]);
+
+Route::post('/admin/message/deleteAll',[
+    'uses'=>'messageController@deleteAll',
+    'as'=>'admin.message.deleteAll'
+]);
+
+Route::get('/updateInbox','messageController@updateInbox');
+
+Route::get('/favorite','messageController@favorite');
+
+Route::get('/unfavorite','messageController@unfavorite');
 
 Route::get('/admin/setting',[
     'uses'=>'DisplayController@setting',
     'as'=>'admin.setting'
 ]);
 
+// Download
 Route::get('/admin/download',[
-    'uses'=>'DisplayController@download',
+    'uses'=>'downloadFileController@download',
     'as'=>'admin.download'
 ]);
 
-Route::get('/admin/download/add',[
-    'uses'=>'DisplayController@downloadAdd',
+Route::post('/admin/download/add',[
+    'uses'=>'downloadFileController@downloadAdd',
     'as'=>'admin.download.add'
+]);
+
+Route::post('/admin/download/edit',[
+    'uses'=>'downloadFileController@downloadEdit',
+    'as'=>'admin.download.edit'
+]);
+
+Route::post('/admin/download/delete',[
+    'uses'=>'downloadFileController@downloadDelete',
+    'as'=>'admin.download.delete'
 ]);
 
 Route::get('/admin/about',[

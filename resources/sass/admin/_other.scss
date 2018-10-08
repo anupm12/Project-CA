@@ -272,3 +272,31 @@ input:checked+.slider:before {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.msg-card {
+    border-top-left-radius: 2.25rem !important;
+    border-top-right-radius: 2.25rem !important;
+    border-bottom-left-radius: 2.25rem !important;
+    border-bottom-right-radius: 2.25rem !important;
+    background-color: #dbdbdb !important
+}
+
+.msg-card-header {
+    border-top-left-radius: 2.25rem !important;
+    border-top-right-radius: 2.25rem !important;
+    border-bottom-left-radius: 2.25rem !important;
+    border-bottom-right-radius: 2.25rem !important;
+}
+
+.msg-btn {
+    color: #2B2C28 !important;
+}
+
+.msg-btn:hover {
+    text-decoration: none !important;
+}
+
+.badge-c {
+    background-color: #2B2C28;
+    color: #7de2d1;
+}

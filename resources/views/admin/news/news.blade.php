@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+@include('sweet::alert')
 <section class="admin-header py-4">
     <div class="container">
         <div class="row no-row">

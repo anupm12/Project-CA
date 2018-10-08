@@ -7,7 +7,7 @@
 
 // require('./main');
 require('./bootstrap');
-
+require('clipboard');
 // window.Vue = require('vue');
 
 

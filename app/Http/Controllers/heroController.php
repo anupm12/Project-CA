@@ -28,7 +28,7 @@ class heroController extends Controller
         $heroText -> highlightedtext = $request -> highlightedtext;
 
         $heroText->save();
-        Session::flash('success','Updated successfully.');
+        alert()->success('Updated Successfully.')->autoclose(2900);
         return redirect()->back();
     }
 
@@ -50,7 +50,7 @@ class heroController extends Controller
         }
 
         $heroImage->save();
-
+        alert()->success('Updated Successfully.')->autoclose(2900);
         return redirect()->back();
     }
 }

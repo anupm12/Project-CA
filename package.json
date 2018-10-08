@@ -17,9 +17,11 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
+        "sweetalert": "^2.0.8",
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "clipboard": "^2.0.1",
         "vue-autoscroll": "^1.1.1",
         "vue-plugin-autoscroll": "^0.1.4",
         "vue-typed": "^2.1.4",

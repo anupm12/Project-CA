@@ -1,3 +1,53 @@
+ {{-- Add Modal --}}
+ <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+ aria-hidden="true">
+ <form action="  {{ route('admin.download.add')  }} " method="post" enctype="multipart/form-data">
+
+     {{ csrf_field() }}
+     <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLongTitle">Add File</h5>
+
+             </div>
+             <div class="modal-body">
+
+
+                            <div class="form-group">
+                                <input name="heading" placeholder="Enter the Heading" type="text" class="form-control admin__form-control">
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text admin__upload-button" id="inputGroupFileAddon01">Upload</span>
+                                            </div>
+
+                                            <div class="custom-file">
+                                              <input name="filePath" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                              <label class="custom-file-label admin__upload-lable" for="inputGroupFile01">Choose file</label>
+                                            </div>
+                                          </div>
+                            </div>
+
+
+                        </form>
+
+
+             </div>
+
+
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="submit" class="btn btn-custom btn-primary">Add</button>
+             </div>
+         </div>
+     </div>
+ </form>
+ </div>
+
+{{-- Edit Modal --}}
+
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
 aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">

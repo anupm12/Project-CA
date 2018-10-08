@@ -36,7 +36,8 @@
 
         <div class="col-md-8 pl-0 py-4 no-col">
             <h3>Leave a Query!</h3>
-            <form action="" class="contact__form">
+        <form action="{{ route('message') }}" method="POST" class="contact__form">
+                {{ csrf_field() }}
                 <div class="input-group contact__form__input-group">
                     <input class="form-control contact__form__input-group__form-control " type="text" name="name"
                         placeholder="Your Name" />
@@ -47,7 +48,7 @@
                     <input type="email" class="form-control contact__form-control" name="email" placeholder="Your Email" />
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control contact__form-control" name="content" id="" cols="30" rows="10"></textarea>
+                    <textarea name="content" class="form-control contact__form-control" name="content" id="" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit" class="btn btn-custom btn-primary">Send Us</button>
             </form>

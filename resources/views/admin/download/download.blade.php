@@ -3,11 +3,13 @@
 @section('content')
 
 
+@include('sweet::alert')
+
 <section class="admin-header py-4">
     <div class="container">
         <div class="row no-row px-3">
             <div class="col-md-12 no-col">
-                <h2><i class="fas fa-cogs"></i>Download<span class="add"><a href="#" class="btn btn-primary btn-custom">Add</a></span></h2>
+                <h2><i class="fas fa-file-download"></i></i>Download<span class="add"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-primary btn-custom">Add</a></span></h2>
 
             </div>
         </div>

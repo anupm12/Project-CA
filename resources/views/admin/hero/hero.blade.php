@@ -1,7 +1,7 @@
 @extends('layouts.adminapp')
 
 @section('content')
-
+@include('sweet::alert')
 
 <section class="admin-header py-4">
     <div class="container">

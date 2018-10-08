@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\News;
 use Session;
+use Alert;
+use Redirect;
 class newsController extends Controller
 {
     public function news(){
@@ -22,7 +24,7 @@ class newsController extends Controller
             'link'=> $request -> link
         ]);
 
-        Session::flash('success','News Added Successfully');
+        alert()->success('News Added Successfully')->autoclose(2900);
         return redirect()->back();
     }
 
@@ -37,15 +39,16 @@ class newsController extends Controller
         $news -> link = $request -> link;
 
         $news -> save();
-        Session::flash('success','News Updated Successfully');
-        return redirect()->back();
+        alert()->success('News Updated Successfully')->autoclose(2900);
+
+       return Redirect::back();
     }
 
     public function newsDelete(Request $request){
         $id = $request -> id;
         $news = News::find($id);
         $news -> delete();
-        Session::flash('success','News Delted Successfully');
+        alert()->success('News Deleted Successfully')->autoclose(2900);
         return redirect()->back();
     }
 }

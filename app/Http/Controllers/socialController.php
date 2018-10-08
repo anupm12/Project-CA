@@ -18,6 +18,7 @@ class socialController extends Controller
 
         $social = Social::find($id);
         $social -> link = $request -> link;
+        alert()->success($social->name.' Link Added Successfully.')->autoclose(2900);
         $social -> save();
         return redirect()->back();
     }
@@ -68,7 +69,7 @@ class socialController extends Controller
                 $social = Social::find(7)->update(['check' => 0]);
 
 
-
+               alert()->success('Your Changes Updated Successfully.')->autoclose(2900);
                return redirect()->back();
     }
 }

@@ -2519,13 +2519,8 @@ textarea.form-control {
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before,
 .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-<<<<<<< HEAD
-  -webkit-box-shadow: 0 0 0 1px #EDEDED, 0 0 0 0.2rem rgba(46, 213, 115, 0.25);
-          box-shadow: 0 0 0 1px #EDEDED, 0 0 0 0.2rem rgba(46, 213, 115, 0.25);
-=======
-  -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(56, 193, 114, 0.25);
-          box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(56, 193, 114, 0.25);
->>>>>>> master
+  -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(46, 213, 115, 0.25);
+          box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(46, 213, 115, 0.25);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label,
@@ -2648,13 +2643,8 @@ textarea.form-control {
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before,
 .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-<<<<<<< HEAD
-  -webkit-box-shadow: 0 0 0 1px #EDEDED, 0 0 0 0.2rem rgba(255, 71, 87, 0.25);
-          box-shadow: 0 0 0 1px #EDEDED, 0 0 0 0.2rem rgba(255, 71, 87, 0.25);
-=======
-  -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(227, 52, 47, 0.25);
-          box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(227, 52, 47, 0.25);
->>>>>>> master
+  -webkit-box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(255, 71, 87, 0.25);
+          box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(255, 71, 87, 0.25);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label,
@@ -11308,6 +11298,34 @@ input:checked + .slider:before {
   visibility: visible;
 }
 
+.msg-card {
+  border-top-left-radius: 2.25rem !important;
+  border-top-right-radius: 2.25rem !important;
+  border-bottom-left-radius: 2.25rem !important;
+  border-bottom-right-radius: 2.25rem !important;
+  background-color: #dbdbdb !important;
+}
+
+.msg-card-header {
+  border-top-left-radius: 2.25rem !important;
+  border-top-right-radius: 2.25rem !important;
+  border-bottom-left-radius: 2.25rem !important;
+  border-bottom-right-radius: 2.25rem !important;
+}
+
+.msg-btn {
+  color: #2B2C28 !important;
+}
+
+.msg-btn:hover {
+  text-decoration: none !important;
+}
+
+.badge-c {
+  background-color: #2B2C28;
+  color: #7de2d1;
+}
+
 @media screen and (max-width: 776px) {
   .list-group-custom {
     display: none;
@@ -11444,15 +11462,6 @@ input:checked + .slider:before {
 
 .service-card {
   background-color: #f8f8f8 !important;
-}
-
-.service-card__title {
-  color: #fff;
-  background-color: #233142 !important;
-  position: absolute;
-  font-size: 1rem;
-  width: 100%;
-  opacity: 0.8;
 }
 
 .service-card__allservices-card {
