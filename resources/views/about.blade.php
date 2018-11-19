@@ -4,12 +4,14 @@
 
 
 <div class="header" style="display:flex;justify-content: space-around;">
-    <div class="text-center">
-        <h1 class="header__h1-text">Know Us Better</h1>
-    </div>
-    <div class="align-items-center justify-content-center">
-        <img class="header-icon" src="/Images/other/aboutUs.svg" class="header__top-icon" alt="">
-    </div>
+        <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center" style="padding:4rem;">
+                <div>
+                <div class="header-design box-border">
+                    <h4 class="header__h1-text heading">Know as Better</h4>
+                </div>
+                </div>
+
+            </div>
 </div>
 
 
@@ -18,8 +20,8 @@
     <div class="container">
         <div class="row no-row py-4">
             <div class="col-md-6 no-col order-2">
-                <h2>Welcome To Monitor Consulting.</h2>
-                <p>Strategic planning is a means of administering the formulation
+                <h2 class="sub-heading dark-color-text">Welcome To Monitor Consulting.</h2>
+                <p class="para gery-color-text">Strategic planning is a means of administering the formulation
                     and implementation of strategy. Strategic planning is analytical
                     in nature and refers to formalized procedures to produce the data and analyses
                     used as inputs for strategic thinking, which synthesizes the data resulting in the strategy.
@@ -40,8 +42,8 @@
                 <img class="about-section-icon" src="Images/other/mountain.svg" alt="" class="about-section-icon">
             </div>
             <div class="col-md-6 no-col ">
-                <h2>Our Mission</h2>
-                <p>Strategic planning is a means of administering the formulation
+                <h2 class="sub-heading dark-color-text">Our Mission</h2>
+                <p class="para gery-color-text">Strategic planning is a means of administering the formulation
                     and implementation of strategy. Strategic planning is analytical
                     in nature and refers to formalized procedures to produce the data and analyses
                     used as inputs for strategic thinking, which synthesizes the data resulting in the strategy.
@@ -55,8 +57,8 @@
 
         <div class="row no-row py-4">
             <div class="col-md-6 no-col order-2">
-                <h2>Our Vision</h2>
-                <p>Strategic planning is a means of administering the formulation
+                <h2 class="sub-heading dark-color-text">Our Vision</h2>
+                <p class="para gery-color-text">Strategic planning is a means of administering the formulation
                     and implementation of strategy. Strategic planning is analytical
                     in nature and refers to formalized procedures to produce the data and analyses
                     used as inputs for strategic thinking, which synthesizes the data resulting in the strategy.
@@ -104,9 +106,9 @@
                                     <img class="card-img-about mx-auto d-block " src="Images/face/man.png" alt="Card image cap">
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-title">CA Gaurav Mishra - Founder</h4>
+                                    <h4 class="card-title sub-heading dark-color-text">CA Gaurav Mishra - Founder</h4>
                                     <p class="text-muted">The Man behind civestt.Com</p>
-                                    <p>
+                                    <p class="para gery-color-text">
                                         <i class="fas fa-quote-left about-quote">
                                         </i>
                                         Gaurav qualified the CA Exams from the Institute of Chartered Accountants of India in 2016.
@@ -136,8 +138,8 @@
                                     <img class="card-img-about mx-auto d-block " src="Images/face/boy.png" alt="Card image cap">
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-title">Akshay Gupta – CEO </h4>
-                                    <p>
+                                    <h4 class="card-title sub-heading dark-color-text">Akshay Gupta – CEO </h4>
+                                    <p class="para gery-color-text">
                                         <i class="fas fa-quote-left about-quote">
                                         </i>
                                         He is qualified finance post graduate from Allahabad University. He has hands on experience
@@ -156,8 +158,8 @@
                                 <img class="card-img-about mx-auto d-block " src="Images/face/boss.png" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Yogesh Singh – Head of Content Design </h4>
-                                <p>
+                                <h4 class="card-title sub-heading dark-color-text">Yogesh Singh – Head of Content Design </h4>
+                                <p class="para gery-color-text">
                                     <i class="fas fa-quote-left about-quote">
                                     </i>
                                     He is qualified finance post graduate from Allahabad University.

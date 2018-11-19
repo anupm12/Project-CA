@@ -18,6 +18,10 @@
                             </div>
 
                             <div class="form-group">
+                                    <textarea name="content" placeholder="Enter the Details" type="text" class="form-control admin__form-control"></textarea>
+                            </div>
+
+                            <div class="form-group">
                                     <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                               <span class="input-group-text admin__upload-button" id="inputGroupFileAddon01">Upload</span>
@@ -38,8 +42,8 @@
 
 
              <div class="modal-footer">
-                 <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                 <button type="submit" class="btn btn-custom btn-primary">Add</button>
+                 <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle pr-2"></i>Close</button>
+                 <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Submit</button>
              </div>
          </div>
      </div>
@@ -57,10 +61,19 @@ aria-hidden="true">
 
         </div>
         <div class="modal-body">
-                <form action="">
+                <form action="{{ route("admin.download.edit") }}" method="post" enctype="multipart/form-data">
+                    {{ method_field('PATCH') }}
+                    {{ csrf_field() }}
+                        <input type="hidden" name="_method" value="PATCH">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="id" id="downloadid" value="">
                         <div class="form-group">
-                            <input placeholder="Enter the Heading" type="text" class="form-control admin__form-control">
-                        </div>
+                                <input name="heading" value="" id="editheading" placeholder="Enter the Heading" type="text" class="form-control admin__form-control">
+                            </div>
+
+                            <div class="form-group">
+                                    <textarea name="content" value="" id="editcontent" placeholder="Enter the Details" type="text" class="form-control admin__form-control"></textarea>
+                            </div>
 
                         <div class="form-group">
                                 <div class="input-group mb-3">
@@ -69,68 +82,115 @@ aria-hidden="true">
                                         </div>
 
                                         <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                          <input name="filePath" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                           <label class="custom-file-label admin__upload-lable" for="inputGroupFile01">Choose file</label>
                                         </div>
                                       </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-custom">Submit</button>
-                    </form>
+
+
         </div>
 
 
         <div class="modal-footer">
-            <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-custom btn-primary">Edit Hero Text</button>
+            <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle pr-2"></i>Close</button>
+            <button type="submit" class="btn btn-custom btn-primary"><i class="fas fa-sync pr-2"></i>Update</button>
         </div>
+    </form>
     </div>
 </div>
 </div>
 
-
+<?php $id = 0; ?>
 {{-- Delete --}}
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-body">
-            <h4>Are You Sure You Want to Delete 🙁</h4>
+    aria-hidden="true">
+    <form action="  {{ route('admin.download.delete')  }} " method="POST" >
+            {{ method_field('DELETE') }}
+            {{ csrf_field() }}
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                    <input type="hidden" name="_method"  value="delete">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="id" id="deleteid" value="">
+                <h4>Are You Sure You Want to Delete this 🙁</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-danger btn-custom">Confirm Delete</textarea>
+            </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a href="#" class="btn btn-danger">Confirm Delete</a>
-        </div>
     </div>
-</div>
 </div>
 
 
-<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLongTitle">Add And Edit Social Links</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Heading</li>
-            <li class="list-group -item"><img src="{{ asset('Images/Help/Hero/heading.png') }}" alt="" ></li>
-            <li class="list-group-item">Hightlighted Text</li>
-            <li class="list-group -item"><img src="{{ asset('Images/Help/Hero/highlight.png') }}" alt="" ></li>
-            <li class="list-group-item">SubHeading</li>
-            <li class="list-group -item"><img src="{{ asset('Images/Help/Hero/subHeading.png') }}" alt="" ></li>
 
-          </ul>
+@section('page-script')
 
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
-  </div>
-</div>
-</div>
+
+
+<script>
+$(document).ready(function(){
+
+$('#editModal').on('show.bs.modal', function (event) {
+
+    var button = $(event.relatedTarget)
+    var id = button.data('id')
+    var heading = button.data('head')
+    var content = button.data('content')
+
+
+    console.log(id);
+    var modal = $(this)
+    modal.find('.modal-body #downloadid').val(id)
+    modal.find('.modal-body #editheading').val(heading)
+    modal.find('.modal-body #editcontent').val(content)
+
+
+    });
+
+
+ $('#deleteModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget)
+                    var deleteid = button.data('deleteid')
+                    console.log(deleteid)
+                    <?php $id = "<script>document.write(deleteid)</script>" ?>
+                    var modal = $(this)
+
+                    modal.find('.modal-body #deleteid').val(deleteid)
+                });
+
+@foreach ($download as $data)
+  $("#publish{{ $data -> id }}").click(function(){
+                        var val =$("#publish{{ $data -> id }}").is(':checked');
+                        if (val){
+                            // console.log('checked')
+                            $.ajax({
+                                headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+                            type:'get',
+                            data:'pubid='+{{ $data -> id }},
+                            url: '{{url('/admin/publish')}}'
+                        })
+                        }
+                        else {
+                            // console.log('unchecked')
+                            $.ajax({
+                                headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+                            type:'get',
+                            data:'pubid='+{{ $data -> id }},
+                            url: '{{url('/admin/unpublish')}}'
+                        })
+                        }
+                    });
+
+         @endforeach
+});
+</script>
+
+@endsection

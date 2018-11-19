@@ -33,6 +33,7 @@
     <!-- Styles -->
     @yield('page-css')
 <link rel="stylesheet" href="{{ asset('css/animate.css') }}" >
+<link rel="stylesheet" href="{{ asset('css/sb-admin.min.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" >
 {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"> --}}
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -43,48 +44,135 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light admin-nav">
-            <a class="navbar-brand" href="."><img src="{{ asset('Images/Logo/logoWhite.svg') }}" alt="" class="black-logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span>
-                    <i class="fas fa-bars" style="
-                    color: #7de2d1;
-                "></i>
-            </span>
-            </button>
+         <nav class="navbar navbar-expand navbar-dark bg-dark static-top admin-nav">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active mx-3">
-                        <a class="nav-link cool-link custom-cursor" >Dashbord</a>
-                    </li>
-                    <li class="nav-item active mx-3">
-                            <a class="nav-link cool-link custom-cursor" >About</a>
-                    </li>
-                </ul>
+      <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
 
-                <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active mx-3">
-                            <a class="nav-link cool-link custom-cursor" >Welcome<span> User Name</span></a>
-                        </li>
-                        <li class="nav-item active mx-3">
-                                <a class="nav-link cool-link custom-cursor" >Log Out</a>
-                        </li>
-                </ul>
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
 
-            </div>
-        </nav>
 
-        <main>
+      <!-- Navbar -->
+        <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">9+</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="badge badge-danger">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+     <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav list-group-custom box-border">
+        <li class="nav-item text-center" style="background:#e8eef8 !important;">
+                <svg class=" mr-2 mt-2 circle-all about__header box-border" style="backgroud:#f5f6fa !imporatant;">
+                        <use xlink:href="{{ asset('Images/Face/avatar.svg#icon-').Auth::guard('admin')->user()->avatar }}">
+                        </use>
+                </svg>
+                <p style="text-transform:capitalize;">{{ Auth::guard('admin')->user()->name }}</p>
+                <p style="font-size:18px;">
+                    <span class="pr-1">
+                    <a href="{{ route('admin.setting') }}" class="nav-link d-inline" data-placement="bottom" data-toggle="tooltip" title="Setting">
+                            <i class="fas fa-sliders-h" style="color:#5c8df6;"></i>
+                        </a>
+                    </span>
+                    <span class="pr-1">
+                        <a href="{{ route('admin.logout') }}" class="nav-link d-inline" data-placement="bottom" data-toggle="tooltip" title="Logout">
+                            <i class="fas fa-power-off" style="color:#454b57;"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="" class="nav-link d-inline" data-placement="bottom" data-toggle="tooltip" title="Info">
+                            <i class="fas fa-info-circle" style="color:#f53b57;"></i>
+                        </a>
+                    </span>
+                </p>
+        </li>
+        <li class="nav-item {{ Request::is('admin/home') ? 'active' : '' }} mt-3" style="{{ Request::is('admin/home') ? 'border-color:#1e90ff;' : '' }}">
+            <a href="{{ route('admin.home') }}" class="nav-link"><i class="fas fa-tachometer-alt" style="color:#1e90ff !important;"></i><span>Dasboard</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/hero') ? 'active' : '' }}" style="{{ Request::is('admin/hero') ? 'border-color:#12CBC4;' : '' }}">
+        <a href="{{ route('admin.hero') }}" class="nav-link" ><i class="fas fa-file" style="color:#12CBC4 !important;"></i><span>Hero
+            Section</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/about') ? 'active' : '' }}" style="{{ Request::is('admin/about') ? 'border-color:#f53b57;' : '' }}">
+        <a href="{{ route('admin.about') }}" class="nav-link"><i class="fas fa-user-circle" style="color:#f53b57 !important;"></i><span>About</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/inbox') ? 'active' : '' }}" style="{{ Request::is('admin/download') ? 'border-color:#3c40c6;' : '' }}">
+            <a href="{{ route('admin.inbox') }}" class="nav-link"><i class="fas fa-envelope" style="color:#03A9F4 !important;"></i></i><span>Inbox</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/message/favorite') ? 'active' : '' }}" style="{{ Request::is('admin/message/favorite') ? 'border-color:#eb4d4b;' : '' }}">
+            <a href="{{ route('admin.message.favorite') }}" class="nav-link"><i class="fas fa-heart"  style="color:#eb4d4b !important;'"></i><span>Favorite</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/news') ? 'active' : '' }}" style="{{ Request::is('admin/download') ? 'border-color:#3c40c6;' : '' }}">
+        <a href="{{ route('admin.news') }}" class="nav-link"><i class="fas fa-newspaper" style="color:#1e272e !important; margin-right: 0.25rem;"></i><span>News</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/download') ? 'active' : '' }} " style="{{ Request::is('admin/download') ? 'border-color:#3c40c6;' : '' }}">
+            <a href="{{ route('admin.download') }}" class="nav-link"><i class="fas fa-arrow-circle-down" style="color:#3c40c6 !important;"></i><span>Download</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/users') ? 'active' : '' }} " style="{{ Request::is('admin/users') ? 'border-color:#ffa801 ;' : '' }}">
+            <a href="{{ route('admin.users') }}" class="nav-link" ><i class="fas fa-users" style="color:#ffa801 !important;"></i> <span>Users</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/services') ? 'active' : '' }} {{ Request::is('admin/services/add') ? 'active' : '' }}" style="{{ Request::is('admin/services') ? 'border-color:#05c46b ;' : '' }}">
+        <a href="{{ route('admin.services') }}" class="nav-link" ><i class="fas fa-cogs" style="color:#05c46b  !important;"></i><span>Services</span></a>
+        </li>
+        <li class="nav-item {{ Request::is('admin/social') ? 'active' : '' }}" style="{{ Request::is('admin/social') ? 'border-color:#C4E538;' : '' }}">
+            <a href="{{ route('admin.social') }}" class="nav-link"><i class="fab fa-twitter" style="color:#C4E538;"></i><span>Social Media Links</span></a>
+        </li>
+        <li class="nav-item" style="{{ Request::is('admin/download') ? 'border-color:#3c40c6;' : '' }}">
+        <a href="#" class="nav-link"><i class="fas fa-address-card">
+            </i><span>Contact</span>
+        </a>
+        </li>
+      </ul>
+
+
             @yield('content')
 
-        </main>
+    </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="{{ asset('js/sb-admin.min.js') }}" ></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     @yield('page-script')
 </body>
 </html>

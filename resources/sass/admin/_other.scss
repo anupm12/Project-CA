@@ -1,5 +1,8 @@
 body {
-    background: $bg-color !important;
+    background: #f4f6fb !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .admin-icon {
@@ -9,13 +12,15 @@ body {
 .admin {
 
     .card-body {
-        background: $bg-color !important;
+        background: #fff !important;
     }
 
     &__card-header {
-        background: #2B2C28 !important;
-        border-top: #7DE2D1 4px solid;
-        color: #fff !important;
+        background: #d8e3f499 !important;
+        border-top: #5C8Df6 4px solid;
+        color: #454B57 !important;
+        border-bottom: 0;
+        font-weight: 500;
     }
 
     &__card-body {
@@ -29,27 +34,30 @@ body {
 
     &__form-control {
         border-radius: 1.25rem !important;
-        background: $bg-color;
+        background: #f5f8fc;
+        border-color: #d8e3f4;
     }
 
     &__upload-button {
         border-top-left-radius: 1.25rem !important;
         border-bottom-left-radius: 1.25rem !important;
-        background: #2b2c28;
+        background: #5c8df6;
         color: #fff;
+        border-color: initial;
     }
 
     &__upload-lable {
         border-top-right-radius: 1.25rem !important;
         border-bottom-right-radius: 1.25rem !important;
-        background: $bg-color;
+        background: #f5f8fc;
     }
 
     &__upload-lable::after {
         border-top-right-radius: 1.25rem !important;
         border-bottom-right-radius: 1.25rem !important;
-        background: #7de2d1;
+        background: #454b57;
         color: #fff;
+        border-color: initial;
     }
 }
 
@@ -70,9 +78,7 @@ body {
     }
 }
 
-.add {
-    float: right;
-}
+
 
 .table-img {
     height: 7rem;
@@ -89,38 +95,7 @@ body {
     padding-bottom: 1.5rem !important;
 }
 
-.social__help {
-    display: inline;
-    float: right;
 
-    & a {
-        color: #7de2d1;
-        font-size: 1.0625rem;
-    }
-
-    & p {
-        display: none;
-        color: #000000;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 15px;
-        -webkit-clip-path: ellipse(50% 33% at 50% 48%);
-        clip-path: ellipse(50% 33% at 50% 48%);
-    }
-
-    & a:hover {
-        display: block;
-    }
-
-    & .help-animation {
-        animation: glow .5s infinite alternate;
-    }
-
-    @keyframes glow {
-        to {
-            text-shadow: 0 0 10px #339989;
-        }
-    }
-}
 
 .submit_button {
     display: flex;
@@ -149,7 +124,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2b2c28;
+    background-color: #5c8df6;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -167,7 +142,7 @@ body {
 }
 
 input:checked+.slider {
-    background-color: #339989;
+    background-color: #f53b57;
 }
 
 input:focus+.slider {
@@ -192,7 +167,7 @@ input:checked+.slider:before {
 
 //Checkbox Switch
 .disable {
-    background-color: #2B2C28 !important;
+    background-color: #5c8df6ad !important;
 }
 
 .disable:hover {
@@ -215,21 +190,37 @@ input:checked+.slider:before {
     width: 12px !important;
 }
 
+//Hero li
+.li-hero {
+    border: initial !important;
+}
 
 //Underline
 .p-line {
-    border-bottom: 1px solid #339989;
+    border-bottom: 1px solid #5C8Df6;
     padding-bottom: 5px;
 }
 
 //Modal
 .modal-content {
-    background: #2B2C28;
+    background: #d8e3f4;
+
+    .btn-primary {
+        background: #5C8Df6 !important;
+        font-weight: 500;
+    }
+
+    .btn-secondary {
+        color: #5c8df6 !important;
+        background: #fff !important;
+        border-color: #5c8df6;
+        font-weight: 500;
+    }
 }
 
 .modal-header {
-    color: #7DE2D1;
-    border-top: 1px solid #7DE2D1;
+    color: #454b57;
+    border-top: 4px solid #5c8df6;
 }
 
 .modal-body {
@@ -278,7 +269,7 @@ input:checked+.slider:before {
     border-top-right-radius: 2.25rem !important;
     border-bottom-left-radius: 2.25rem !important;
     border-bottom-right-radius: 2.25rem !important;
-    background-color: #dbdbdb !important
+    background-color: #e8eef8a3 !important;
 }
 
 .msg-card-header {
@@ -289,7 +280,7 @@ input:checked+.slider:before {
 }
 
 .msg-btn {
-    color: #2B2C28 !important;
+    color: #454b57 !important;
 }
 
 .msg-btn:hover {
@@ -297,6 +288,50 @@ input:checked+.slider:before {
 }
 
 .badge-c {
-    background-color: #2B2C28;
-    color: #7de2d1;
+    background-color: #5c8df6;
+    color: #fff;
+}
+
+
+// download icon
+.ppt,
+.pptx {
+    background: #ff5722 !important;
+    border-color: #f45320 !important;
+}
+
+.doc,
+.docx {
+    background: #135db2 !important;
+    border-color: #135db2 !important;
+}
+
+.pdf {
+    background: #ff5050 !important;
+    border-color: #ff5050 !important;
+}
+
+.custom-file-label {
+    border-color: #d8e3f4;
+}
+
+
+//dropdown hover effect
+.dropdown-item-custom {
+    transition: all .2s;
+}
+
+.dropdown-item-custom:hover {
+    background: #b9ccf5;
+}
+
+.btn-admin {
+    background: #5C8Df6 !important;
+    font-weight: 500;
+}
+
+//Remove border from modal and box shadow
+.modal-content {
+    border: initial;
+    box-shadow: 0 2px 6px 0 #00000033;
 }

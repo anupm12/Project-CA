@@ -5,48 +5,65 @@
 
 @include('sweet::alert')
 
-<section class="admin-header py-4">
-    <div class="container">
-        <div class="row no-row px-3">
-            <div class="col-md-12 no-col">
-                <h2><i class="fas fa-file-download"></i></i>Download<span class="add"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-primary btn-custom">Add</a></span></h2>
+<div id="content-wrapper">
 
-            </div>
+        <div class="container-fluid">
+                <ol class="breadcrumb admin-header">
+                    <li class="breadcrumb-item">
+                        <a href="{{route('admin.download') }}"><i class="fas fa-arrow-circle-down"></i> Downloadable Contents </a>
+                    </li>
+                    <li class="breadcrumb-item active">Overview</li>
+                    <li style="width:100%;" class="py-2">
+                        <a href="#"  data-target="#addModal" data-toggle="modal" class="btn-custom btn-sm" style="background:#5c8df6;"><i class="fas fa-plus pr-2"></i>Add</a>
+                    </li>
+                </ol>
+
+                <div class="card box-border" style="border:initial;">
+                        <div class="card-header admin__card-header">
+                            Downloadable Contents
+                        </div>
+                        <div class="card-body">
+                                <div class="table-responsive">
+                                <table class="table table-hover">
+                                        <thead>
+                                            <th>publish</th>
+                                             <th>File Name</th>
+                                             <th>Heading</th>
+                                             <th>Type</th>
+                                             <th></th>
+                                             <th>Edit</th>
+                                             <th>Delete</th>
+
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach ($download as $data)
+                                            <tr>
+                                                <td><div class="pretty p-icon p-curve  p-tada">
+                                                      <input id="publish{{ $data -> id }}" value="{{ $data -> id }}" type="checkbox" {{ $data -> publish? 'checked' : 'unchecked' }} />
+                                                        <div class="state p-success">
+                                                                <i class="icon fas fa-check"></i>
+                                                            <label></label>
+                                                        </div>
+                                                    </div></td>
+                                                <td>{{ $data -> fileName }}</td>
+                                                <td>{{ $data -> heading }}</td>
+                                                <td>{{ $data -> type }}</td>
+                                                <td><a href="{{ $data -> path }}" style="color:#f3628d;" target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
+                                                <td><a data-toggle="modal" data-target="#editModal" data-id = {{ $data -> id }} data-head = "{{ $data -> heading }}" data-content="{{ $data -> content }}"  style="color:#5c8df6;" href=""><i class="fas fa-edit"></a></td>
+                                                <td><a data-toggle="modal" data-target="#deleteModal" data-deleteid ="{{ $data -> id }}"   class="text-danger" href=""><i class="fas fa-trash-alt"></a></td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
         </div>
-    </div>
-</section>
+</div>
 
-<div class="menu py-4">
-    <div class="container admin">
-        <div class="row no-row justify-content-center">
-            <div class="col-md-3 no-col">
-                @include('layouts.sidenav')
-            </div>
-            <div class="col-md-9 no-col">
-                <div class="card">
-                    <div class="card-header admin__card-header">
-                        Downloadable Contents
-                    </div>
-                    <div class="card-body">
-                            <table class="table table-hover">
-                                    <thead>
-                                         <th>File Name</th>
-                                         <th>Heading</th>
-                                         <th>Edit</th>
-                                         <th>Delete</th>
-                                    </thead>
 
-                                    <tbody>
-                                        <td><img src="" alt=""></td>
-                                        <td>PayRoll</td>
-                                        <td><a data-toggle="modal" data-target="#editModal" class="btn btn-sm btn-success" href="">Edit</a></td>
-                                        <td><a data-toggle="modal" data-target="#deleteModal" class="btn btn-sm btn-danger" href="">Delete</a></td>
-                                    </tbody>
-
-                                </table>
-                    </div>
-                </div>
-            </div>
 
 
             @include('includes.downloadmodal')

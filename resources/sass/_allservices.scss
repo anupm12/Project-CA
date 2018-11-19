@@ -3,10 +3,9 @@
 
 
     &__allservices-card {
-        width: 20rem !important;
-        height: 14rem !important;
+
         border: 1px solid $bg-color;
-        border-radius: 20px;
+        // border-radius: 20px;
     }
 
     &__allservices-img {
@@ -17,4 +16,23 @@
     &__allservices-col {
         padding-bottom: 2rem;
     }
+
+
+}
+
+.circle-all {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 1s ease-in;
+}
+
+.service-circle {
+    transition: all .6s ease-in;
+}
+
+.service-circle:hover>.circle-all {
+    transform: scale(1);
 }

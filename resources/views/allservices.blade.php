@@ -5,67 +5,65 @@
 
 
 
-<div class="header" style="display:flex;justify-content: space-around;">
-    <div class="text-center">
-        <h1 class="header__h1-text">Get In Touch</h1>
-    </div>
-    <div class="align-items-center justify-content-center">
-        <img class="header__top-icon header-icon img-fluid" src="/Images/SVG/contact.svg" alt="">
-    </div>
+<div class="header1" >
+    <p>Hello</p>
+        {{-- <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center" style="padding:4rem;">
+                <div>
+                <div class="header-design box-border">
+                    <h4 class="header__h1-text heading">Service</h4>
+                </div>
+                </div>
+
+            </div> --}}
 </div>
 
 
 
 
-<div class=" service-card">
-    <div class="row no-row py-5">
-
-        <div class="col-md-3 no-col d-flex justify-content-center service-card__allservices-col">
-            <div class="card pb-3 service-card__allservices-card">
-                <div class="img-fluid">
-                    <img class="service-card__allservices-img" src="Images/other/AccountingandAdvisoryServices.svg" alt="Card image cap">
-                </div>
-                <div class="d-flex align-items-center text-center">
-                    <a href=" {{ route('single')  }}  " class="service-card__title">Legal Compliances</a>
-                </div>
-            </div>
-            </a>
-        </div>
-
-        <div class="col-md-3 no-col d-flex justify-content-center">
-            <div class="card pb-3  service-card__allservices-card">
-                <div class="img-fluid">
-                    <img class="service-card__allservices-img" src="Images/other/AccountingandAdvisoryServices.svg" alt="Card image cap">
-                </div>
-                <div class="d-flex align-items-center text-center">
-                    <a href=" {{ route('single')  }}  " class="service-card__title">Legal Compliances</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 no-col d-flex justify-content-center">
-            <div class="card pb-3  service-card__allservices-card">
-                <div class="img-fluid">
-                    <img class="service-card__allservices-img" src="Images/other/AccountingandAdvisoryServices.svg" alt="Card image cap">
-                </div>
-                <div class="d-flex align-items-center text-center">
-                    <a href=" {{ route('single')  }}  " class="service-card__title">Legal Compliances</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 no-col d-flex justify-content-center">
-            <div class="card pb-3  service-card__allservices-card">
-                <div class="img-fluid">
-                    <img class="service-card__allservices-img" src="Images/other/AccountingandAdvisoryServices.svg" alt="Card image cap">
-                </div>
-                <div class="d-flex align-items-center text-center">
-                    <a href=" {{ route('single')  }}  " class="service-card__title">Legal Compliances</a>
-                </div>
-            </div>
-        </div>
-
+<div class=" service-card ">
+    <div class="custom-center py-3">
+                <img src="Images\SVG\services2.svg" style="height: 18rem;">
     </div>
+
+
+
+    <div class="custom-center pb-3 ">
+            <p class="para light-gery-color-text mx-2-2 mx-xs-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ea at fugiat eligendi, eveniet consequatur?</p>
+    </div>
+
+
+
+
+
+    <div class="row no-row py-5" style="align-items:center;justify-content:center;">
+
+        @foreach($services as $service)
+        <div class="col-md-3 mx-2 no-col service-card__allservices-col">
+
+                    <div style="display:flex; jusitfy-content:space-between;align-items:center;">
+                    <div class="service-circle hvr-grow">
+                        @if(!$service -> image)
+
+                            <svg class=" mr-2 mt-2 circle-all about__header box-border">
+                                    <use xlink:href="Images/Services/services.svg#{{ $service -> icon }}">
+                                    </use>
+                            </svg>
+                        @else
+                            <img src="{{ $service -> image }}" alt="{{ $service -> heading }}">
+                        @endif
+                        <a href="{{ route('single',['id' => $service -> id])  }}" class="service-card__title service-link">
+                                <span class="gery-color-text" style="font-weight: 500; font-size:14px;
+                                ">{{ $service -> heading }}</span></a>
+                    </div>
+
+
+
+
+        </div>
+            </div>
+            @endforeach
+
+</div>
 </div>
 
 @include('layouts.contact')

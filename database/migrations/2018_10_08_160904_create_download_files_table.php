@@ -19,6 +19,8 @@ class CreateDownloadFilesTable extends Migration
             $table->string('heading');
             $table->string('path');
             $table->string('type');
+            $table->string('icon');
+            $table->string('content');
             $table->boolean('publish')->default(0);
             $table->timestamps();
         });

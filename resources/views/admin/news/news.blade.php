@@ -3,62 +3,63 @@
 @section('content')
 
 @include('sweet::alert')
-<section class="admin-header py-4">
-    <div class="container">
-        <div class="row no-row">
-            <div class="col-md-12 no-col">
-                <h2><i class="fas fa-newspaper"></i>News<span class="add"><a href="#" data-toggle="modal" data-target="#addModal" class="btn btn-primary btn-custom text-center"><i class="fas fa-plus-circle"></i></a></span></h2>
 
-            </div>
+<div id="content-wrapper">
+
+        <div class="container-fluid">
+                <ol class="breadcrumb admin-header">
+                    <li class="breadcrumb-item">
+                        <a href="{{route('admin.news') }}"> <i class="fas fa-newspaper"></i> News </a>
+                    </li>
+                    <li class="breadcrumb-item active">Overview</li>
+                    <li style="width:100%;" class="py-2">
+                        <a href="#"  data-toggle="modal"
+                        data-target="#addModal" class="btn-custom btn-sm" style="background:#5c8df6;"><i class="fas fa-plus pr-2"></i>Add</a>
+                    </li>
+                </ol>
+
+
+                <div class="card box-border" style="border:initial;">
+                        <div class="card-header admin__card-header">
+                            News
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table id="example" class="table display table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Heading</th>
+                                        <th>Link</th>
+                                        <th>Eidt</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $no = 1; ?>
+                                    @foreach($news as $news1)
+                                    <tr>
+                                        <td>{{ $no }}</td>
+                                        <td>{{ $news1 -> heading }}</td>
+                                        <td><a href="{{ 'https://'.$news1 -> link }}" >{{ $news1 -> link }}</a></td>
+                                    <td><a href="" data-toggle="modal" data-id="{{ $news1 -> id }}" data-head = "{{ $news1 -> heading }}" data-link = "{{ $news1 -> link }}" data-target="#editModal"
+                                                style="color:#5c8df6;"><i class="fas fa-edit"></i></a>
+                                        </td>
+                                        <td> <a href="" data-toggle="modal" data-deleteid="{{ $news1 -> id }}" data-target="#deleteModal"
+                                                class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    <?php $no++ ?>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                            </div>
+
+                        </div>
+                    </div>
         </div>
-    </div>
-</section>
+</div>
 
-<div class="menu py-4">
-    <div class="container admin">
-        <div class="row no-row ">
-            <div class="col-md-3 no-col">
-                @include('layouts.sidenav')
-            </div>
-            <div class="col-md-9 no-col">
-                <div class="card">
-                    <div class="card-header admin__card-header">
-                        Services
-                    </div>
-                    <div class="card-body">
-                        <table id="example" class="table display table-striped">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Heading</th>
-                                    <th>Link</th>
-                                    <th>Eidt</th>
-                                    <th>Delete</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $no = 1; ?>
-                                @foreach($news as $news1)
-                                <tr>
-                                    <td>{{ $no }}</td>
-                                    <td>{{ $news1 -> heading }}</td>
-                                    <td><a href="{{ 'https://'.$news1 -> link }}" >{{ $news1 -> link }}</a></td>
-                                <td><a href="" data-toggle="modal" data-id="{{ $news1 -> id }}" data-head = "{{ $news1 -> heading }}" data-link = "{{ $news1 -> link }}" data-target="#editModal"
-                                            class="btn btn-sm btn-success btn-custom text-center mr-2"><i class="fas fa-edit"></i></a>
-                                    </td>
-                                    <td> <a href="" data-toggle="modal" data-deleteid="{{ $news1 -> id }}" data-target="#deleteModal"
-                                            class="btn btn-sm btn-danger btn-custom text-center"><i class="fas fa-trash-alt"></i></a>
-                                    </td>
-                                <?php $no++ ?>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -94,7 +95,7 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-custom btn-primary">Add</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Submit</button>
                 </div>
             </div>
         </div>

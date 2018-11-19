@@ -2,29 +2,20 @@
 
 @section('content')
 
+<div id="content-wrapper">
+        <div class="container-fluid">
+            <ol class="breadcrumb admin-header">
+                <li class="breadcrumb-item">
+                    <a href="{{ route('admin.social') }}"><i class="fas fa-sliders-h pr-2" style="color:#5c8df6;"></i>Setting</a>
+                </li>
 
-<section class="header py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2><i class="fas fa-cogs"></i>Services<span class="add">+</span></h2>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="menu py-4">
-    <div class="container admin">
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                @include('layouts.sidenav')
-            </div>
-            <div class="col-md-9">
-                <div class="card">
+            </ol>
+            <div class="card box-border" style="border:initial;">
                     <div class="card-header admin__card-header">
+                        Setting
                     </div>
                     <div class="card-body">
+                    <a href="{{ route('admin.user.profile',['id'=> Auth::guard('admin')->user()->id]) }}" class="btn btn-custom btn-admin my-3" style="float: left;"><i class="fas fa-user-circle pr-2"></i>User Profile</a>
                         <form action="">
                             <table class="table table-striped">
                                 <thead>
@@ -56,12 +47,14 @@
                                 </tbody>
                             </table>
                             <div class="submit_button">
-                                <button type="submit" class="btn btn-primary btn-custom">Save Change</button>
+                                <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-save pr-2"></i>Save Change</button>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+        </div>
+</div>
+
 
 
 

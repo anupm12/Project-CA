@@ -17,7 +17,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter teh links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -43,7 +43,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -69,7 +69,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -96,7 +96,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -122,7 +122,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -147,7 +147,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the links" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>
@@ -173,7 +173,7 @@
                         <label for="links"></label>
                         <input placeholder="Enter the Phone Number" name="link" id="links" type="text" class="form-control admin__form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom">Go</button>
+                    <button type="submit" class="btn btn-custom btn-admin"><i class="fas fa-check-circle pr-2"></i>Go</button>
                 </form>
             </div>
         </div>

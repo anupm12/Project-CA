@@ -16,66 +16,89 @@ Route::get('/', [
     'as'=>'welcome'
 ]);
 
-Auth::routes();
+Auth::routes(['verify' => true]);
+
+Route::get('/verify/message', function () {
+   echo hello;
+})->middleware('verified')->name('verify.message');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin/home', 'DisplayController@index')->name('admin.home');
+Route::group([ 'prefix' => 'admin', 'middleware' => ['auth:admin']], function() {
 
-Route::get('/admin/services',[
+
+    Route::get('/home', 'DisplayController@index')->name('admin.home');
+
+    //Service
+Route::get('/services',[
     'uses'=>'serviceController@services',
     'as'=>'admin.services'
 ]);
 
-Route::post('/admin/services/store',[
+Route::get('/services/add',[
+    'uses'=>'serviceController@servicesAdd',
+    'as'=>'admin.services.add'
+]);
+
+Route::post('/services/store',[
     'uses' => 'serviceController@createService',
     'as' => 'admin.service.store'
 ]);
 
-Route::get('/admin/services/add',[
-    'uses'=>'serviceController@servicesadd',
-    'as'=>'admin.hero'
+Route::get('/services/edit/{id}',[
+    'uses'=>'serviceController@servicesEdit',
+    'as'=>'admin.services.edit'
 ]);
 
-Route::get('/admin/hero',[
+Route::post('/services/update/{id}',[
+    'uses'=>'serviceController@updateService',
+    'as'=>'admin.services.update'
+]);
+
+Route::patch('/services/delete/',[
+    'uses'=>'serviceController@deleteService',
+    'as'=>'admin.services.delete'
+]);
+
+Route::get('/hero',[
     'uses'=>'heroController@hero',
     'as'=>'admin.hero'
 ]);
 
-Route::post('/admin/hero/editText',[
+Route::post('/hero/editText',[
     'uses'=>'heroController@editHerotext',
     'as'=>'admin.hero.editHeroText'
 ]);
 
-Route::patch('/admin/hero/editImage',[
+Route::patch('/hero/editImage',[
     'uses'=>'heroController@editHeroImage',
     'as'=>'admin.hero.editHeroImage'
 ]);
 
 
 // Social
-Route::get('/admin/social',[
+Route::get('/social',[
     'uses'=>'socialController@social',
     'as'=>'admin.social'
 ]);
 
-Route::post('/admin/social/add/{id}',[
+Route::post('/social/add/{id}',[
     'uses'=>'socialController@socialAdd',
     'as'=>'admin.social.add'
 ]);
 
-Route::patch('/admin/social/save',[
+Route::patch('/social/save',[
     'uses'=>'socialController@socialSave',
     'as'=>'admin.social.save'
 ]);
 
 //Messages
-Route::get('/admin/inbox',[
+Route::get('/inbox',[
     'uses'=>'messageController@index',
     'as'=>'admin.inbox'
 ]);
 
-Route::get('/admin/message/favorite',[
+Route::get('/message/favorite',[
     'uses' => 'messageController@favIndex',
     'as'=>'admin.message.favorite'
 ]);
@@ -85,7 +108,7 @@ Route::post('/message',[
     'as'=>'message'
 ]);
 
-Route::post('/admin/message/deleteAll',[
+Route::post('/message/deleteAll',[
     'uses'=>'messageController@deleteAll',
     'as'=>'admin.message.deleteAll'
 ]);
@@ -96,62 +119,117 @@ Route::get('/favorite','messageController@favorite');
 
 Route::get('/unfavorite','messageController@unfavorite');
 
-Route::get('/admin/setting',[
+Route::get('/setting',[
     'uses'=>'DisplayController@setting',
     'as'=>'admin.setting'
 ]);
 
 // Download
-Route::get('/admin/download',[
+Route::get('/download',[
     'uses'=>'downloadFileController@download',
     'as'=>'admin.download'
 ]);
 
-Route::post('/admin/download/add',[
+Route::post('/download/add',[
     'uses'=>'downloadFileController@downloadAdd',
     'as'=>'admin.download.add'
 ]);
 
-Route::post('/admin/download/edit',[
+Route::patch('/download/edit',[
     'uses'=>'downloadFileController@downloadEdit',
     'as'=>'admin.download.edit'
 ]);
 
-Route::post('/admin/download/delete',[
+Route::delete('/download/delete',[
     'uses'=>'downloadFileController@downloadDelete',
     'as'=>'admin.download.delete'
 ]);
 
-Route::get('/admin/about',[
-    'uses'=>'DisplayController@about',
+Route::get('/publish','downloadFileController@publish');
+
+Route::get('/unpublish','downloadFileController@unpublish');
+
+//About
+Route::get('/about',[
+    'uses'=>'aboutController@about',
     'as'=>'admin.about'
 ]);
 
-Route::get('/admin/about/add',[
-    'uses'=>'DisplayController@aboutAdd',
+Route::get('/about/aboutAdd',[
+    'uses'=>'aboutController@aboutAdd',
+    'as'=>'admin.about.aboutAdd'
+]);
+
+
+Route::get('/about/aboutEdit/{id}',[
+    'uses'=>'aboutController@aboutEdit',
+    'as'=>'admin.about.aboutEdit'
+]);
+
+
+Route::post('/about/add',[
+    'uses'=>'aboutController@add',
     'as'=>'admin.about.add'
 ]);
 
+Route::post('/about/edit/{id}',[
+    'uses'=>'aboutController@edit',
+    'as'=>'admin.about.edit'
+]);
+
+Route::patch('/about/delete/',[
+    'uses'=>'aboutController@delete',
+    'as'=>'admin.about.delete'
+]);
+
 //News
-Route::get('/admin/news',[
+Route::get('/news',[
     'uses'=>'newsController@news',
     'as'=>'admin.news'
 ]);
 
-Route::post('/admin/news/add',[
+Route::post('/news/add',[
     'uses'=>'newsController@newsAdd',
     'as'=>'admin.news.add'
 ]);
 
-Route::patch('/admin/news/edit',[
+Route::patch('/news/edit',[
     'uses'=>'newsController@newsEdit',
     'as'=>'admin.news.edit'
 ]);
 
-Route::patch('admin/news/delete',[
+Route::patch('/news/delete',[
     'uses'=>'newsController@newsDelete',
     'as'=>'admin.news.delete'
 ]);
+
+Route::get('/users',[
+    'uses'=>'loginUsersController@loginUsers',
+    'as'=>'admin.users'
+]);
+
+Route::get('/user/profile/{id}',[
+    'uses'=>'loginUsersController@profile',
+    'as'=>'admin.user.profile'
+]);
+
+Route::post('/user/profile/avatar',[
+    'uses'=>'loginUsersController@profileAvatar',
+    'as'=>'admin.user.profile.avatar'
+]);
+
+Route::post('/user/profile/password/change',[
+    'uses'=>'loginUsersController@changePassword',
+    'as'=>'admin.user.profile.password.change'
+]);
+
+});
+
+
+
+
+
+
 
 Route::get('/services/single', [
     'uses' => 'DisplayController@single',
@@ -165,7 +243,7 @@ Route::get('/all-services',[
     'as' => 'allservices'
 ]);
 
-Route::get('/single',[
+Route::get('/single/{id}',[
     'uses' => 'DisplayController@single',
     'as' => 'single'
 ]);
@@ -184,3 +262,30 @@ Route::get('/contact-us',[
     'uses' => 'DisplayController@contact',
     'as' => 'contact'
 ]);
+
+Route::get('/results','DisplayController@results');
+
+Route::get('login/{provider}',[
+   'uses' =>'Auth\LoginController@redirectToProvider',
+   'as'=>'login.auth'
+   ]);
+
+Route::get('users/logout','Auth\LoginController@userLogout')->name('user.logout');
+
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('admin/login','Auth\AdminLoginController@showLoginForm')->name('admin.login');
+
+Route::get('admin/logout','Auth\AdminLoginController@logout')->name('admin.logout');
+
+Route::post('admin/login/into','Auth\AdminLoginController@login')->name('admin.login.into');
+
+Route::get('admin/register','Auth\AdminRegisterController@showRegisterForm')->name('admin.register');
+
+Route::post('admin/register/store','Auth\AdminRegisterController@register')->name('admin.register.store');
+
+//Password Reset
+Route::post('admin/password/email','Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+Route::get('admin/password/reset','Auth\AdminForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+Route::post('admin/password/reset','Auth\AdminResetPasswordController@reset');
+Route::get('admin/password/reset/{token}','Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');

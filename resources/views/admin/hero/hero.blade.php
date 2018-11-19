@@ -3,66 +3,57 @@
 @section('content')
 @include('sweet::alert')
 
-<section class="admin-header py-4">
-    <div class="container">
-        <div class="row no-row">
-            <div class="col-md-12 no-col">
-                <h2><i class="fas fa-cogs"></i>Hero Section</h2><a class="text-right" href="" data-toggle="modal"
-                    data-target="#addImageModal"></i></a>
+<div id="content-wrapper">
+        <div class="container-fluid">
+            <ol class="breadcrumb admin-header">
+                <li class="breadcrumb-item">
+                    <a href="{{ route('admin.hero') }}"><i class="fas fa-user-circle"></i> Hero Section </a>
+                </li>
+                <li class="breadcrumb-item active">Overview</li>
+            </ol>
 
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="menu py-4">
-    <div class="container admin">
-        <div class="row no-row justify-content-start">
-            <div class="col-md-3 no-col">
-                @include('layouts.sidenav')
-            </div>
-            <div class="col-md-9 no-col">
-                <div class="card">
+            <div class="card box-border" style="border:initial;">
                     <div class="card-header admin__card-header">
                         Services
                     </div>
                     <div class="card-body">
-                        <ul class="list-group py-4">
-                            <li class="list-group-item">
-                                <h3><i class="fab fa-fonticons-fi admin-icon mr-2"></i></i>Text </h3>
+                        <ul class="list-group box-border" >
+                            <li class="list-group-item li-hero" style="background:#f5f6fa;">
+                                <h3>Text </h3>
                             </li>
-                            <li class="list-group-item text-left">
+                            <li class="list-group-item li-hero text-left">
                                 <p class="p-line"><strong>Heading: </strong> {{ $heroText->heading }} </p>
                                 <p class="p-line"><strong>Sub-heading: </strong> {{ $heroText->subheading }} </p>
                                 <p class="p-line"><strong>Highlighted text: </strong> {{ $heroText->highlightedtext }} </p>
                                 <div class="text-center">
-                                    <a href="" data-toggle="modal" data-target="#textModal" class="btn btn-sm btn-success btn-custom"><i class="fas fa-edit"></i></a>
+                                    <a href="" data-toggle="modal" data-target="#textModal" class="btn btn-custom" style="color: #5c8df6 !important;border-color: #5c8df6;font-weight: 500;"><i class="fas fa-edit pr-2"></i>Edit</a>
                                 </div>
                             </li>
 
 
                         </ul>
 
-                        <ul class="list-group py-4">
-                            <li class="list-group-item">
-                                <h3 ><i class="fas fa-images admin-icon mr-2" ></i></i>Image</h3>
+                        <ul class="list-group box-border mt-3">
+                            <li class="list-group-item li-hero" style="background:#f5f6fa;">
+                                <h3 ><i class="fas fa-images admin-icon mr-2" style="color:#5c8df6;"></i>Image</h3>
                             </li>
+                            <?php $no = 1; ?>
                             @foreach ($heroImages as $heroImage)
-                            <li class="list-group-item">
-                                <img src="{{ $heroImage -> image }}" class="w-100 table-img img-fluid" alt="">
-                                <a href="" data-toggle="modal" data-id="{{ $heroImage->id }}" data-target="#imageModal"
-                                    class="btn btn-sm btn-success btn-custom text-center mr-2"><i class="fas fa-edit"></i></a>
-                                <a href="" data-toggle="modal" data-id="{{ $heroImage->id }}" data-target="#deleteModal"
-                                    class="btn btn-sm btn-danger btn-custom text-center"><i class="fas fa-trash-alt"></i></a>
+                            <li class="list-group-item li-hero">
+                                <span class="pr-3" style="color:#5c8df6">Image {{ $no }}</span>
+                                <img class="p-line" src="{{ $heroImage -> image }}" class="img-fluid" alt="" style="width:250px;" >
+                                <a class="pl-3 btn btn-custom" href="" data-toggle="modal" data-id="{{ $heroImage->id }}" data-target="#imageModal"
+                                    style="color:#5c8df6 !important; border-color:#5c8df6;"><i class="fas fa-edit"></i>Edit</a>
                             </li>
+                            <?php $no++; ?>
                             @endforeach
 
                         </ul>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
+</div>
+
 
     {{-- Text Modal --}}
     <div class="modal fade" id="textModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -73,12 +64,6 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Edit Hero Text</h5>
-
-
-                        <div class="social__help">
-                            <p>Go To Setting to off this glowing effect</p>
-                            <a class="help-animation" href="#" data-toggle="modal" data-target="#helpModal"><i class="fas fa-question-circle"></i>Help</a>
-                        </div>
 
                     </div>
                     <div class="modal-body">
@@ -97,8 +82,8 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-custom btn-primary">Edit Hero Text</button>
+                        <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle pr-2"></i>Close</button>
+                        <button type="submit" class="btn btn-custom btn-primary"><i class="fas fa-sync pr-2"></i>Update Hero Text</button>
                     </div>
                 </div>
             </div>
@@ -142,8 +127,8 @@
 
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-custom btn-primary">Edit Hero Image</button>
+                        <button type="button" class="btn btn-custom btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle pr-2"></i>Close</button>
+                        <button type="submit" class="btn btn-custom btn-primary"><i class="fas fa-sync pr-2"></i>Update Hero Image</button>
                     </div>
                 </div>
             </div>

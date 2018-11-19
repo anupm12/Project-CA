@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
 
 // Variables
@@ -28,4 +28,31 @@ h3,
 h4 {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 600 !important;
+}
+
+.heading {
+    font-size: 2.25rem !important;
+    line-height: 1.125 !important;
+}
+
+.sub-heading {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+}
+
+.para {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+.dark-color-text {
+    color: hsl(0, 0%, 13%) !important;
+}
+
+.gery-color-text {
+    color: hsl(0, 0%, 29%) !important;
+}
+
+.light-gery-color-text {
+    color: hsl(0, 0%, 45%) !important;
 }

@@ -8,10 +8,12 @@ class DownloadFile extends Model
 {
     Protected $fillable=[
         'fileName',
+        'icon',
         'path',
         'publish',
         'type',
-        'heading'
+        'heading',
+        'content'
     ];
 
     public function getFeaturedAttribute($path){

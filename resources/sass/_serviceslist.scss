@@ -14,4 +14,39 @@
         padding-top: 10rem;
     }
 
+
+}
+
+.services-link {
+    color: hsl(0, 0%, 29%) !important;
+}
+
+.services-link:hover {
+    text-decoration: none;
+}
+
+.services-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color-1;
+    transition: width 0.3s;
+    cursor: pointer;
+}
+
+.services-link:hover::after {
+    width: 100%;
+}
+
+
+.services-link-active {
+    // content: "";
+    // display: block;
+    // width: 100%;
+    // height: 2px;
+    // background: $color-1;
+    // transition: width 0.3s;
+    // cursor: pointer;
+    background: hsl(220, 12%, 95%);
 }

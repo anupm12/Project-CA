@@ -3,20 +3,53 @@
 @section('content')
 
 
-@include('layouts.servicesheader')
+<div class="header">
+        <div class="row no-row px-4 py-2" style="background:#2b2c28d9">
+                <div class="col-md-12 no-col my-4 header-link">
+                <a href="">Home</a><span>&nbsp;<i class="fas fa-angle-right"></i></span><a href="">Services</a><span>&nbsp;<i class="fas fa-angle-right"></i></span><a href="">{{ $service -> heading }}</a>
+                </div>
+                </div>
 
+
+    <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center" style="padding:4rem;">
+        <div>
+        <div class="header-design box-border">
+            <h4 class="header__h1-text heading">{{ $service -> heading }}</h4>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="content" style="background:#fff;">
+<div class="container" style="padding-top: 4.5rem !important;">
 <div class="row no-row service-list">
-    @include('layouts.serviceslist')
+    <div class="col-md-3 no-col py-4">
+        <ul class="list-group box-border">
+                <li class="list-group-item" style="border:0 !important;border-top:6px solid #53C7F0 !important;background:hsl(0,0%,97%);">Services</li>
+                @foreach($services as $data)
+                    <li style="border:0 !important;" class="list-group-item {{ Request::is('single/'.$data -> id) ? 'services-link-active' : '' }}"><a class="services-link text-muted " href="{{ route('single',['id' => $data -> id])  }}">{{ $data -> heading }}</a></li>
+                @endforeach
+        </ul>
+    </div>
+    <div class="col-md-9 no-col py-4" style="padding-left: 3rem !important;">
+            <div>
+                    @if(!$service -> image)
+                    <div style="background-image:url('Images/bg.svg')">
+                        <svg class="header-logo" style="border:0;">
+                                <use xlink:href="{{ asset('Images/Services/services.svg#'.$service -> icon) }}">
+                                </use>
+                        </svg>
+                    </div>
+                        @else
+                        <img src="{{ $service -> image }}" alt="{{ $service -> heading }}">
+                    @endif
+                </div>
 
-    <!-- <div class="col-md-9">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam nobis dolores sequi saepe. Architecto distinctio perspiciatis, officia sapiente nam numquam recusandae quas asperiores explicabo. Optio dignissimos quisquam ipsa officiis.
-            Cumque tenetur veritatis at ipsam aperiam? Modi ipsum saepe distinctio dolorem nobis nisi laboriosam veritatis facere, esse minus odio ratione rerum magni dolores eos, necessitatibus consectetur voluptas. Consequuntur, repellat quis?
-            Blanditiis, laudantium obcaecati impedit ducimus accusantium mollitia error quod neque illum id aut accusamus perspiciatis quos ex a tempora aliquam ipsam ipsum quis quaerat quibusdam? Consectetur aliquam illum sed quaerat.
-            Porro itaque, totam rerum accusamus ratione delectus quod sunt officia quibusdam, eos, blanditiis ad praesentium saepe vitae reiciendis incidunt harum temporibus iste odit consectetur nihil tempore architecto quasi iure! Blanditiis.
-            At, optio sed, autem eaque alias ipsum temporibus accusamus ducimus dolorem quibusdam delectus omnis sapiente recusandae corporis suscipit illum eos! Atque nemo inventore minima laborum quis assumenda ducimus, aliquam quidem.
-        </p>
-    </div> -->
+        {!! $service -> content !!}
+    </div>
+</div>
+</div>
 </div>
 
 
