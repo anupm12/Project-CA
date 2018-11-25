@@ -15,10 +15,7 @@
             <div class="card box-border" style="border:initial;">
                     <div class="card-header admin__card-header">
                         About
-                        <div class="social__help">
-                            <p>Go To Setting to off this glowing effect</p>
-                            <a class="help-animation" href="#" data-toggle="modal" data-target="#helpModal"><i class="fas fa-question-circle"></i>Help</a>
-                        </div>
+
                     </div>
                     <div class="card-body" style="text-align:start;">
                         <form action="{{ route('admin.about.add') }}" method="post"  enctype="multipart/form-data">

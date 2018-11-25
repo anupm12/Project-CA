@@ -99,18 +99,18 @@
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav list-group-custom box-border">
         <li class="nav-item text-center" style="background:#e8eef8 !important;">
-                <svg class=" mr-2 mt-2 circle-all about__header box-border" style="backgroud:#f5f6fa !imporatant;">
+                <svg class=" mr-2 mt-2 circle-all about__header box-border circle-all-admin" style="backgroud:#f5f6fa !imporatant;">
                         <use xlink:href="{{ asset('Images/Face/avatar.svg#icon-').Auth::guard('admin')->user()->avatar }}">
                         </use>
                 </svg>
-                <p style="text-transform:capitalize;">{{ Auth::guard('admin')->user()->name }}</p>
-                <p style="font-size:18px;">
-                    <span class="pr-1">
+                <p class="admin-sidebar-name" style="text-transform:capitalize;">{{ Auth::guard('admin')->user()->name }}</p>
+                <p class="admin-sidebar-icon" style="font-size:18px;">
+                    <span class="pr-1 admin-sidebar-icon-padding">
                     <a href="{{ route('admin.setting') }}" class="nav-link d-inline" data-placement="bottom" data-toggle="tooltip" title="Setting">
                             <i class="fas fa-sliders-h" style="color:#5c8df6;"></i>
                         </a>
                     </span>
-                    <span class="pr-1">
+                    <span class="pr-1 admin-sidebar-icon-padding">
                         <a href="{{ route('admin.logout') }}" class="nav-link d-inline" data-placement="bottom" data-toggle="tooltip" title="Logout">
                             <i class="fas fa-power-off" style="color:#454b57;"></i>
                         </a>
@@ -153,8 +153,8 @@
         <li class="nav-item {{ Request::is('admin/social') ? 'active' : '' }}" style="{{ Request::is('admin/social') ? 'border-color:#C4E538;' : '' }}">
             <a href="{{ route('admin.social') }}" class="nav-link"><i class="fab fa-twitter" style="color:#C4E538;"></i><span>Social Media Links</span></a>
         </li>
-        <li class="nav-item" style="{{ Request::is('admin/download') ? 'border-color:#3c40c6;' : '' }}">
-        <a href="#" class="nav-link"><i class="fas fa-address-card">
+        <li class="nav-item {{ Request::is('admin/contact') ? 'active' : '' }}" style="{{ Request::is('admin/contact') ? 'border-color:#e056fd;' : '' }}">
+        <a href="{{ route('admin.contact') }}" class="nav-link"><i class="fas fa-address-card" style="color:#e056fd !important;">
             </i><span>Contact</span>
         </a>
         </li>

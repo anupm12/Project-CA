@@ -3,19 +3,15 @@
 @section('content')
 
 
+<div id="content-wrapper">
+        <div class="container-fluid">
 
+<ol class="breadcrumb admin-header custom-center" style="background: #f4f6fb;">
+        <li class="breadcrumb-item">
+            <h3><a href="{{route('admin.contact') }}" class="all-header"> Services </a></h3>
+        </li>
 
-<div class="header1" >
-    <p>Hello</p>
-        {{-- <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center" style="padding:4rem;">
-                <div>
-                <div class="header-design box-border">
-                    <h4 class="header__h1-text heading">Service</h4>
-                </div>
-                </div>
-
-            </div> --}}
-</div>
+    </ol>
 
 
 
@@ -64,6 +60,9 @@
             @endforeach
 
 </div>
+</div>
+
+        </div>
 </div>
 
 @include('layouts.contact')

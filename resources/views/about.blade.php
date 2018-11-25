@@ -3,21 +3,19 @@
 @section('content')
 
 
-<div class="header" style="display:flex;justify-content: space-around;">
-        <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center" style="padding:4rem;">
-                <div>
-                <div class="header-design box-border">
-                    <h4 class="header__h1-text heading">Know as Better</h4>
-                </div>
-                </div>
+<div id="content-wrapper">
+        <div class="container-fluid">
 
-            </div>
-</div>
+<ol class="breadcrumb admin-header custom-center" style="background: #f4f6fb;">
+        <li class="breadcrumb-item">
+            <h3><a href="{{route('admin.contact') }}" class="all-header"> About </a></h3>
+        </li>
 
+    </ol>
 
 
 <section class="main-about">
-    <div class="container">
+
         <div class="row no-row py-4">
             <div class="col-md-6 no-col order-2">
                 <h2 class="sub-heading dark-color-text">Welcome To Monitor Consulting.</h2>
@@ -73,7 +71,7 @@
                 <img src="Images/other/glasses.svg" class="about-section-icon" alt="">
             </div>
         </div>
-    </div>
+
 
      <!-- <div class=" py-4">
         <div class="row no-row quote px-4">
@@ -91,7 +89,7 @@
         </div>
     </div>  -->
 
-    <div class="container">
+
             <div class="row no-row py-4">
                 <div class="col-md-12 no-col ">
                         <h2>Our Expert Team</h2>
@@ -101,7 +99,7 @@
             <div class="row no-row py-4">
 
                 <div class="col-md-12 no-col ">
-                        <div class="card h-100">
+                        <div class="card h-100 box-border" style="border:initial;">
                                 <div class="py-3">
                                     <img class="card-img-about mx-auto d-block " src="Images/face/man.png" alt="Card image cap">
                                 </div>
@@ -133,7 +131,7 @@
 
             <div class="row no-row py-4">
                 <div class="col-md-12 no-col">
-                        <div class="card h-100  ">
+                        <div class="card h-100 box-border" style="border:initial;">
                                 <div class="py-3">
                                     <img class="card-img-about mx-auto d-block " src="Images/face/boy.png" alt="Card image cap">
                                 </div>
@@ -153,7 +151,7 @@
             </div>
 
             <div class="row no-row py-4">
-                    <div class="card h-100  ">
+                    <div class="card h-100 box-border" style="border:initial;">
                             <div class="py-3">
                                 <img class="card-img-about mx-auto d-block " src="Images/face/boss.png" alt="Card image cap">
                             </div>
@@ -170,8 +168,9 @@
                             </div>
                         </div>
                 </div>
-        </div>
 
+    </div>
+</div>
 
 </section>
 

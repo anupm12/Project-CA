@@ -54,7 +54,7 @@ class DisplayController extends Controller
     }
 
     public function download1(){
-        return view('download')->with('download',DownloadFile::orderBy('created_at', 'desc')->get())
+        return view('download')->with('download',DownloadFile::orderBy('created_at', 'desc')->paginate(8))
                                ->with('social',Social::all());
     }
 
