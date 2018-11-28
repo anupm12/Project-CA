@@ -4,12 +4,12 @@
     padding: 7rem 0rem 7rem 0rem !important;
 
     &__footer-card {
-        border:none !important;
+        border: none !important;
     }
 
     &__footer-card-body {
-       background-color: #181818;
-       text-align: left !important;
+        background-color: #181818;
+        text-align: left !important;
     }
 
     &__footer-card-heading {
@@ -20,10 +20,20 @@
     &__footer-card-text {
         color: $footer-text;
     }
-   
+
 }
 
 .footer-2 {
     background-color: #202020;
     color: #707070;
+}
+
+.page-link {
+    color: #1e90ff !important;
+}
+
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #1e90ff !important;
+    border-color: #1e90ff !important;
 }

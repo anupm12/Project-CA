@@ -19,6 +19,14 @@ class loginUsersController extends Controller
         return view('admin.users.profile')->with('user',Admin::find($id));
     }
 
+    public function nameChange(Request $request){
+        $user = Auth::user();
+        $user -> name = $request->name;
+        $user -> save();
+        alert() -> success('Your Name Successfully Changed')->autoclose(2900);
+        return redirect()->back();
+    }
+
     public function profileAvatar(Request $request){
         $avatar =   Auth::user();
         if($request -> avatar){

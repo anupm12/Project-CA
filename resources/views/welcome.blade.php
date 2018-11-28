@@ -197,7 +197,11 @@
 
 
     <div class="row no-row px-5 card-row services__card py-4">
-        <div class="col-md-3 no-col card-col wow bounceInUp ">
+        <div class="col-md-3 no-col card-col wow bounceInUp"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce"
+        >
             <div class="card h-100 card1 " style="border-top: 6px solid #1e90ff !important;">
                 <div class="card-body py-4">
                     <img class="card-img-top mx-auto d-block " src="Images/Services/Group_187.png" alt="Card image cap">
@@ -459,7 +463,11 @@
 @endsection
 
 @section('page-script')
+
 <script type="text/javascript" src="{{URL::asset('js/wow.min.js') }}"></script>
 <script type="text/javascript" src="{{URL::asset('js/main.js') }}"></script>
 <script type="text/javascript" src="{{URL::asset('js/typed.js')}}"></script>
+<script type="text/javascript">
+    sal();
+</script>
 @stop

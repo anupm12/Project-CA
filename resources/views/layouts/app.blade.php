@@ -26,7 +26,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top my-nav box-border box-boder-mb">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top my-nav box-boder-mb">
             <a class="navbar-brand pt-0 pb-0 mr-0 ml-0" href=" {{ route('welcome')  }}  ">
             <img src="{{ asset('Images/Logo/logoBlack.svg') }}" alt="" class="black-logo">
             </a>
@@ -52,7 +52,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" onClick="document.getElementById('bulletin-section').scrollIntoView();">BULLETIN</a>
-                            <a class="dropdown-item" href="#">What's new</a>
+                        <a class="dropdown-item" href="{{ route('download') }}">What's new</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item highlight-text">UPDATED EVERYDAY</a>
                         </div>

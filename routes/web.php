@@ -223,6 +223,31 @@ Route::post('/user/profile/password/change',[
     'as'=>'admin.user.profile.password.change'
 ]);
 
+Route::post('/user/name/change',[
+    'uses' => 'loginUsersController@nameChange',
+    'as' => 'admin.user.name.change'
+]);
+
+//Contact
+
+Route::get('/contact',[
+    'uses' => 'contactController@index',
+    'as'=>'admin.contact'
+]);
+
+Route::post('/contact/change',[
+    'uses' => 'contactController@editContact',
+    'as'=>'admin.contact.change'
+]);
+
+Route::post('/contact/publish',[
+    'uses' => 'contactController@publish',
+    'as'=>'admin.contact.publish'
+]);
+
+
+
+
 });
 
 

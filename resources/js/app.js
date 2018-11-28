@@ -9,7 +9,7 @@
 require('./bootstrap');
 require('clipboard');
 // window.Vue = require('vue');
-
+var sal = require('sal.js');
 
 
 
